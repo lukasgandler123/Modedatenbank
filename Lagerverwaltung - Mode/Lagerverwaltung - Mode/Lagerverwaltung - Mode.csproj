@@ -58,6 +58,12 @@
     <Compile Include="Ausgangsjournal.Designer.cs">
       <DependentUpon>Ausgangsjournal.cs</DependentUpon>
     </Compile>
+    <Compile Include="Benutzer_Bearbeiten.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Benutzer_Bearbeiten.Designer.cs">
+      <DependentUpon>Benutzer_Bearbeiten.cs</DependentUpon>
+    </Compile>
     <Compile Include="Benutzer_Hinzufuegen.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -44,5 +44,11 @@ namespace Lagerverwaltung___Mode
             Eingangsjournal ej = new Eingangsjournal();
             ej.ShowDialog();
         }
+
+        private void benutzerBearbeitenToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Benutzer_Bearbeiten bb = new Benutzer_Bearbeiten();
+            bb.ShowDialog();
+        }
     }
 }

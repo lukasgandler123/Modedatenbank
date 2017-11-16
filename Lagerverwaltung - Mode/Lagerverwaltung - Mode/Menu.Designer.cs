@@ -180,6 +180,7 @@
             this.benutzerBearbeitenToolStripMenuItem.Name = "benutzerBearbeitenToolStripMenuItem";
             this.benutzerBearbeitenToolStripMenuItem.Size = new System.Drawing.Size(203, 22);
             this.benutzerBearbeitenToolStripMenuItem.Text = "Benutzer bearbeiten";
+            this.benutzerBearbeitenToolStripMenuItem.Click += new System.EventHandler(this.benutzerBearbeitenToolStripMenuItem_Click);
             // 
             // menuStrip1
             // 
