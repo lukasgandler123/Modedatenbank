@@ -56,70 +56,78 @@ namespace Lagerverwaltung___Mode
                 MessageBox.Show(ex.ToString());
             }
 
-
-            if (benutzernameVerfuegbar)
+            // Werte der Felder
+            if (!txt_Benutzername.Text.Equals("") && !txt_Email.Text.Equals("") && !txt_Nachname.Text.Equals("") && !txt_Passwort.Text.Equals("") &&
+                !txt_PasswortBestaetigen.Text.Equals("") && !txt_Telefon.Text.Equals("") && !txt_Vorname.Text.Equals("") && !cmb_Rolle.Text.Equals(""))
             {
-                // Passwort
-                if (txt_Passwort.Text.ToString().Equals(txt_PasswortBestaetigen.Text.ToString()))
+                if (benutzernameVerfuegbar)
                 {
-                    // Email
-                    if (txt_Email.Text.ToString().Contains("@"))
+                    // Passwort
+                    if (txt_Passwort.Text.ToString().Equals(txt_PasswortBestaetigen.Text.ToString()))
                     {
-                        HashPasswort hp = new HashPasswort();
-
-                        MySqlCommand insert = new MySqlCommand("INSERT INTO t_benutzer (vorname, nachname, email, telefon, rolle, benutzername, passwort)" +
-                            "VALUES ('" + txt_Vorname.Text.ToString() + "', " +
-                            "'" + txt_Nachname.Text.ToString() + "', " +
-                            "'" + txt_Email.Text.ToString() + "', " +
-                            "'" + txt_Telefon.Text.ToString() + "', " +
-                            "'" + cmb_Rolle.Text.ToLower().ToString() + "', " +
-                            "'" + txt_Benutzername.Text.ToString() + "', " +
-                            "'" + hp.Hash(txt_Passwort.Text.ToString(), 1000) + "');", con);
-
-                        try
+                        // Email
+                        if (txt_Email.Text.ToString().Contains("@"))
                         {
-                            con.Open();
-                            insert.ExecuteNonQuery();
-                            con.Close();
+                            HashPasswort hp = new HashPasswort();
 
-                            MessageBox.Show("Benutzer erfolgreich angelegt!");
+                            MySqlCommand insert = new MySqlCommand("INSERT INTO t_benutzer (vorname, nachname, email, telefon, rolle, benutzername, passwort)" +
+                                "VALUES ('" + txt_Vorname.Text.ToString() + "', " +
+                                "'" + txt_Nachname.Text.ToString() + "', " +
+                                "'" + txt_Email.Text.ToString() + "', " +
+                                "'" + txt_Telefon.Text.ToString() + "', " +
+                                "'" + cmb_Rolle.Text.ToLower().ToString() + "', " +
+                                "'" + txt_Benutzername.Text.ToString() + "', " +
+                                "'" + hp.Hash(txt_Passwort.Text.ToString(), 1000) + "');", con);
 
-                            // Inhalte der Eingabefelder löschen
-                            cmb_Rolle.Text = "";
-                            foreach(Control c in Controls)
+                            try
                             {
-                                try
-                                {
-                                    TextBox t;
-                                    t = (TextBox)c;
-                                    t.Text = "";
-                                }
-                                catch(Exception ex)
-                                {
-                                    //MessageBox.Show(ex.ToString());
-                                }
-                            }
+                                con.Open();
+                                insert.ExecuteNonQuery();
+                                con.Close();
 
-                            DropDownAktualisieren();
+                                MessageBox.Show("Benutzer erfolgreich angelegt!");
+
+                                // Inhalte der Eingabefelder löschen
+                                cmb_Rolle.Text = "";
+                                foreach (Control c in Controls)
+                                {
+                                    try
+                                    {
+                                        TextBox t;
+                                        t = (TextBox)c;
+                                        t.Text = "";
+                                    }
+                                    catch (Exception ex)
+                                    {
+                                        //MessageBox.Show(ex.ToString());
+                                    }
+                                }
+
+                                DropDownAktualisieren();
+                            }
+                            catch (MySqlException ex)
+                            {
+                                MessageBox.Show(ex.ToString());
+                            }
                         }
-                        catch(MySqlException ex)
+                        else
                         {
-                            MessageBox.Show(ex.ToString());
+                            MessageBox.Show("Bitte geben Sie eine gültige E-Mailadresse ein!");
                         }
                     }
                     else
                     {
-                        MessageBox.Show("Bitte geben Sie eine gültige E-Mailadresse ein!");
+                        MessageBox.Show("Die Passwörter stimmt nicht überein!");
                     }
                 }
                 else
                 {
-                    MessageBox.Show("Die Passwörter stimmt nicht überein!");
+                    MessageBox.Show("Benutzername bereits vergeben!");
                 } 
             }
             else
             {
-                MessageBox.Show("Benutzername bereits vergeben!");
+                MessageBox.Show("In allen Feldern müssen Werte eingegeben werden!");
             }
         }
 
