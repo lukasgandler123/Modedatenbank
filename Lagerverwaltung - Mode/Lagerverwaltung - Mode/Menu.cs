@@ -21,5 +21,11 @@ namespace Lagerverwaltung___Mode
         {
             Close();
         }
+
+        private void neuenBenutzerAnlegenToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Benutzer_Hinzufuegen bh = new Benutzer_Hinzufuegen();
+            bh.ShowDialog();
+        }
     }
 }
