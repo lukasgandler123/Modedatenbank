@@ -31,19 +31,19 @@
             this.components = new System.ComponentModel.Container();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.abmeldenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.eingangsjournalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ausgansjournalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.benutzerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.neuenBenutzerAnlegenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.benutzerBearbeitenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.tbc_Lager = new System.Windows.Forms.TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.tbp_eingang = new System.Windows.Forms.TabPage();
+            this.tbp_ausgang = new System.Windows.Forms.TabPage();
+            this.tbp_einsehen = new System.Windows.Forms.TabPage();
             this.tbc_Daten = new System.Windows.Forms.TabControl();
             this.tbp_Artikel = new System.Windows.Forms.TabPage();
             this.tbp_Lieferanten = new System.Windows.Forms.TabPage();
-            this.tabPage5 = new System.Windows.Forms.TabPage();
             this.tbp_Kunden = new System.Windows.Forms.TabPage();
             this.menuStrip1.SuspendLayout();
             this.tbc_Lager.SuspendLayout();
@@ -69,11 +69,6 @@
             this.abmeldenToolStripMenuItem.Size = new System.Drawing.Size(74, 20);
             this.abmeldenToolStripMenuItem.Text = "Abmelden";
             this.abmeldenToolStripMenuItem.Click += new System.EventHandler(this.abmeldenToolStripMenuItem_Click);
-            // 
-            // contextMenuStrip1
-            // 
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
             // eingangsjournalToolStripMenuItem
             // 
@@ -108,36 +103,51 @@
             this.benutzerBearbeitenToolStripMenuItem.Size = new System.Drawing.Size(203, 22);
             this.benutzerBearbeitenToolStripMenuItem.Text = "Benutzer bearbeiten";
             // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
+            // 
             // tbc_Lager
             // 
-            this.tbc_Lager.Controls.Add(this.tabPage1);
-            this.tbc_Lager.Controls.Add(this.tabPage2);
-            this.tbc_Lager.Controls.Add(this.tabPage5);
+            this.tbc_Lager.Controls.Add(this.tbp_eingang);
+            this.tbc_Lager.Controls.Add(this.tbp_ausgang);
+            this.tbc_Lager.Controls.Add(this.tbp_einsehen);
             this.tbc_Lager.Location = new System.Drawing.Point(12, 27);
             this.tbc_Lager.Name = "tbc_Lager";
             this.tbc_Lager.SelectedIndex = 0;
             this.tbc_Lager.Size = new System.Drawing.Size(327, 476);
             this.tbc_Lager.TabIndex = 2;
             // 
-            // tabPage1
+            // tbp_eingang
             // 
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(319, 450);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "tabPage1";
-            this.tabPage1.UseVisualStyleBackColor = true;
+            this.tbp_eingang.Location = new System.Drawing.Point(4, 22);
+            this.tbp_eingang.Name = "tbp_eingang";
+            this.tbp_eingang.Padding = new System.Windows.Forms.Padding(3);
+            this.tbp_eingang.Size = new System.Drawing.Size(319, 450);
+            this.tbp_eingang.TabIndex = 0;
+            this.tbp_eingang.Text = "Eingang erfassen";
+            this.tbp_eingang.UseVisualStyleBackColor = true;
             // 
-            // tabPage2
+            // tbp_ausgang
             // 
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(319, 450);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "tabPage2";
-            this.tabPage2.UseVisualStyleBackColor = true;
+            this.tbp_ausgang.Location = new System.Drawing.Point(4, 22);
+            this.tbp_ausgang.Name = "tbp_ausgang";
+            this.tbp_ausgang.Padding = new System.Windows.Forms.Padding(3);
+            this.tbp_ausgang.Size = new System.Drawing.Size(319, 450);
+            this.tbp_ausgang.TabIndex = 1;
+            this.tbp_ausgang.Text = "Ausgang erfassen";
+            this.tbp_ausgang.UseVisualStyleBackColor = true;
+            // 
+            // tbp_einsehen
+            // 
+            this.tbp_einsehen.Location = new System.Drawing.Point(4, 22);
+            this.tbp_einsehen.Name = "tbp_einsehen";
+            this.tbp_einsehen.Padding = new System.Windows.Forms.Padding(3);
+            this.tbp_einsehen.Size = new System.Drawing.Size(319, 450);
+            this.tbp_einsehen.TabIndex = 2;
+            this.tbp_einsehen.Text = "Lagerstand einsehen";
+            this.tbp_einsehen.UseVisualStyleBackColor = true;
             // 
             // tbc_Daten
             // 
@@ -169,16 +179,6 @@
             this.tbp_Lieferanten.TabIndex = 1;
             this.tbp_Lieferanten.Text = "Lieferanten";
             this.tbp_Lieferanten.UseVisualStyleBackColor = true;
-            // 
-            // tabPage5
-            // 
-            this.tabPage5.Location = new System.Drawing.Point(4, 22);
-            this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5.Size = new System.Drawing.Size(319, 450);
-            this.tabPage5.TabIndex = 2;
-            this.tabPage5.Text = "tabPage5";
-            this.tabPage5.UseVisualStyleBackColor = true;
             // 
             // tbp_Kunden
             // 
@@ -220,12 +220,12 @@
         private System.Windows.Forms.ToolStripMenuItem benutzerBearbeitenToolStripMenuItem;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.TabControl tbc_Lager;
-        private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.TabPage tbp_eingang;
+        private System.Windows.Forms.TabPage tbp_ausgang;
         private System.Windows.Forms.TabControl tbc_Daten;
         private System.Windows.Forms.TabPage tbp_Artikel;
         private System.Windows.Forms.TabPage tbp_Lieferanten;
-        private System.Windows.Forms.TabPage tabPage5;
+        private System.Windows.Forms.TabPage tbp_einsehen;
         private System.Windows.Forms.TabPage tbp_Kunden;
     }
 }
