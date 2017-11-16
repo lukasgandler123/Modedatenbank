@@ -41,9 +41,10 @@
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tbc_Daten = new System.Windows.Forms.TabControl();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.tbp_Artikel = new System.Windows.Forms.TabPage();
+            this.tbp_Lieferanten = new System.Windows.Forms.TabPage();
             this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.tbp_Kunden = new System.Windows.Forms.TabPage();
             this.menuStrip1.SuspendLayout();
             this.tbc_Lager.SuspendLayout();
             this.tbc_Daten.SuspendLayout();
@@ -67,6 +68,7 @@
             this.abmeldenToolStripMenuItem.Name = "abmeldenToolStripMenuItem";
             this.abmeldenToolStripMenuItem.Size = new System.Drawing.Size(74, 20);
             this.abmeldenToolStripMenuItem.Text = "Abmelden";
+            this.abmeldenToolStripMenuItem.Click += new System.EventHandler(this.abmeldenToolStripMenuItem_Click);
             // 
             // contextMenuStrip1
             // 
@@ -139,33 +141,34 @@
             // 
             // tbc_Daten
             // 
-            this.tbc_Daten.Controls.Add(this.tabPage3);
-            this.tbc_Daten.Controls.Add(this.tabPage4);
+            this.tbc_Daten.Controls.Add(this.tbp_Artikel);
+            this.tbc_Daten.Controls.Add(this.tbp_Lieferanten);
+            this.tbc_Daten.Controls.Add(this.tbp_Kunden);
             this.tbc_Daten.Location = new System.Drawing.Point(484, 27);
             this.tbc_Daten.Name = "tbc_Daten";
             this.tbc_Daten.SelectedIndex = 0;
             this.tbc_Daten.Size = new System.Drawing.Size(314, 472);
             this.tbc_Daten.TabIndex = 3;
             // 
-            // tabPage3
+            // tbp_Artikel
             // 
-            this.tabPage3.Location = new System.Drawing.Point(4, 22);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(306, 446);
-            this.tabPage3.TabIndex = 0;
-            this.tabPage3.Text = "tabPage3";
-            this.tabPage3.UseVisualStyleBackColor = true;
+            this.tbp_Artikel.Location = new System.Drawing.Point(4, 22);
+            this.tbp_Artikel.Name = "tbp_Artikel";
+            this.tbp_Artikel.Padding = new System.Windows.Forms.Padding(3);
+            this.tbp_Artikel.Size = new System.Drawing.Size(306, 446);
+            this.tbp_Artikel.TabIndex = 0;
+            this.tbp_Artikel.Text = "Artikel";
+            this.tbp_Artikel.UseVisualStyleBackColor = true;
             // 
-            // tabPage4
+            // tbp_Lieferanten
             // 
-            this.tabPage4.Location = new System.Drawing.Point(4, 22);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(192, 74);
-            this.tabPage4.TabIndex = 1;
-            this.tabPage4.Text = "tabPage4";
-            this.tabPage4.UseVisualStyleBackColor = true;
+            this.tbp_Lieferanten.Location = new System.Drawing.Point(4, 22);
+            this.tbp_Lieferanten.Name = "tbp_Lieferanten";
+            this.tbp_Lieferanten.Padding = new System.Windows.Forms.Padding(3);
+            this.tbp_Lieferanten.Size = new System.Drawing.Size(306, 446);
+            this.tbp_Lieferanten.TabIndex = 1;
+            this.tbp_Lieferanten.Text = "Lieferanten";
+            this.tbp_Lieferanten.UseVisualStyleBackColor = true;
             // 
             // tabPage5
             // 
@@ -176,6 +179,15 @@
             this.tabPage5.TabIndex = 2;
             this.tabPage5.Text = "tabPage5";
             this.tabPage5.UseVisualStyleBackColor = true;
+            // 
+            // tbp_Kunden
+            // 
+            this.tbp_Kunden.Location = new System.Drawing.Point(4, 22);
+            this.tbp_Kunden.Name = "tbp_Kunden";
+            this.tbp_Kunden.Size = new System.Drawing.Size(306, 446);
+            this.tbp_Kunden.TabIndex = 2;
+            this.tbp_Kunden.Text = "Kunden";
+            this.tbp_Kunden.UseVisualStyleBackColor = true;
             // 
             // Menu
             // 
@@ -211,8 +223,9 @@
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.TabControl tbc_Daten;
-        private System.Windows.Forms.TabPage tabPage3;
-        private System.Windows.Forms.TabPage tabPage4;
+        private System.Windows.Forms.TabPage tbp_Artikel;
+        private System.Windows.Forms.TabPage tbp_Lieferanten;
         private System.Windows.Forms.TabPage tabPage5;
+        private System.Windows.Forms.TabPage tbp_Kunden;
     }
 }

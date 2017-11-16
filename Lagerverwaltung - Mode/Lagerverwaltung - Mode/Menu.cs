@@ -16,5 +16,10 @@ namespace Lagerverwaltung___Mode
         {
             InitializeComponent();
         }
+
+        private void abmeldenToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }
