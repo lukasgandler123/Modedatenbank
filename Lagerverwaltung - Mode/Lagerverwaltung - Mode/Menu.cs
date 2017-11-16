@@ -32,5 +32,17 @@ namespace Lagerverwaltung___Mode
         {
 
         }
+
+        private void ausgansjournalToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Ausgangsjournal aj = new Ausgangsjournal();
+            aj.ShowDialog();
+        }
+
+        private void eingangsjournalToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Eingangsjournal ej = new Eingangsjournal();
+            ej.ShowDialog();
+        }
     }
 }

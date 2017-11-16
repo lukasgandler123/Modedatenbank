@@ -52,6 +52,12 @@
     <Compile Include="Anmeldung.Designer.cs">
       <DependentUpon>Anmeldung.cs</DependentUpon>
     </Compile>
+    <Compile Include="Ausgangsjournal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ausgangsjournal.Designer.cs">
+      <DependentUpon>Ausgangsjournal.cs</DependentUpon>
+    </Compile>
     <Compile Include="Benutzer_Hinzufuegen.cs">
       <SubType>Form</SubType>
     </Compile>
