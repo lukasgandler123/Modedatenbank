@@ -43,6 +43,7 @@
             this.tbc_Daten = new System.Windows.Forms.TabControl();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.tabPage5 = new System.Windows.Forms.TabPage();
             this.menuStrip1.SuspendLayout();
             this.tbc_Lager.SuspendLayout();
             this.tbc_Daten.SuspendLayout();
@@ -109,6 +110,7 @@
             // 
             this.tbc_Lager.Controls.Add(this.tabPage1);
             this.tbc_Lager.Controls.Add(this.tabPage2);
+            this.tbc_Lager.Controls.Add(this.tabPage5);
             this.tbc_Lager.Location = new System.Drawing.Point(12, 27);
             this.tbc_Lager.Name = "tbc_Lager";
             this.tbc_Lager.SelectedIndex = 0;
@@ -165,6 +167,16 @@
             this.tabPage4.Text = "tabPage4";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
+            // tabPage5
+            // 
+            this.tabPage5.Location = new System.Drawing.Point(4, 22);
+            this.tabPage5.Name = "tabPage5";
+            this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage5.Size = new System.Drawing.Size(319, 450);
+            this.tabPage5.TabIndex = 2;
+            this.tabPage5.Text = "tabPage5";
+            this.tabPage5.UseVisualStyleBackColor = true;
+            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -201,5 +213,6 @@
         private System.Windows.Forms.TabControl tbc_Daten;
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.TabPage tabPage4;
+        private System.Windows.Forms.TabPage tabPage5;
     }
 }
