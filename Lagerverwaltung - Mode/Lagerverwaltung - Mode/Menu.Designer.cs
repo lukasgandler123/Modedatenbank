@@ -45,7 +45,6 @@
             this.tbp_Lieferanten = new System.Windows.Forms.TabPage();
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.tbp_Kunden = new System.Windows.Forms.TabPage();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
             this.menuStrip1.SuspendLayout();
             this.tbc_Lager.SuspendLayout();
             this.tbc_Daten.SuspendLayout();
@@ -114,7 +113,6 @@
             this.tbc_Lager.Controls.Add(this.tabPage1);
             this.tbc_Lager.Controls.Add(this.tabPage2);
             this.tbc_Lager.Controls.Add(this.tabPage5);
-            this.tbc_Lager.Controls.Add(this.tabPage3);
             this.tbc_Lager.Location = new System.Drawing.Point(12, 27);
             this.tbc_Lager.Name = "tbc_Lager";
             this.tbc_Lager.SelectedIndex = 0;
@@ -136,7 +134,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(192, 74);
+            this.tabPage2.Size = new System.Drawing.Size(319, 450);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "tabPage2";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -191,16 +189,6 @@
             this.tbp_Kunden.Text = "Kunden";
             this.tbp_Kunden.UseVisualStyleBackColor = true;
             // 
-            // tabPage3
-            // 
-            this.tabPage3.Location = new System.Drawing.Point(4, 22);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(319, 450);
-            this.tabPage3.TabIndex = 3;
-            this.tabPage3.Text = "tabPage3";
-            this.tabPage3.UseVisualStyleBackColor = true;
-            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -239,6 +227,5 @@
         private System.Windows.Forms.TabPage tbp_Lieferanten;
         private System.Windows.Forms.TabPage tabPage5;
         private System.Windows.Forms.TabPage tbp_Kunden;
-        private System.Windows.Forms.TabPage tabPage3;
     }
 }
