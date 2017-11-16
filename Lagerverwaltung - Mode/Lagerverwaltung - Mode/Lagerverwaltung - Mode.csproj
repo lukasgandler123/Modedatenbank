@@ -88,6 +88,9 @@
     <EmbeddedResource Include="Anmeldung.resx">
       <DependentUpon>Anmeldung.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Benutzer_Bearbeiten.resx">
+      <DependentUpon>Benutzer_Bearbeiten.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Benutzer_Hinzufuegen.resx">
       <DependentUpon>Benutzer_Hinzufuegen.cs</DependentUpon>
     </EmbeddedResource>
