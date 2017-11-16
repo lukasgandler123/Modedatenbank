@@ -27,5 +27,10 @@ namespace Lagerverwaltung___Mode
             Benutzer_Hinzufuegen bh = new Benutzer_Hinzufuegen();
             bh.ShowDialog();
         }
+
+        private void tbp_Artikel_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
