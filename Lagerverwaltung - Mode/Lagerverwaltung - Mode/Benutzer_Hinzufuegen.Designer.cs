@@ -56,6 +56,7 @@
             this.btn_Anlegen.TabIndex = 0;
             this.btn_Anlegen.Text = "Anlegen";
             this.btn_Anlegen.UseVisualStyleBackColor = true;
+            this.btn_Anlegen.Click += new System.EventHandler(this.btn_Anlegen_Click);
             // 
             // btn_Abbrechen
             // 
@@ -65,6 +66,7 @@
             this.btn_Abbrechen.TabIndex = 1;
             this.btn_Abbrechen.Text = "Abbrechen";
             this.btn_Abbrechen.UseVisualStyleBackColor = true;
+            this.btn_Abbrechen.Click += new System.EventHandler(this.btn_Abbrechen_Click);
             // 
             // lbl_Vorname
             // 
