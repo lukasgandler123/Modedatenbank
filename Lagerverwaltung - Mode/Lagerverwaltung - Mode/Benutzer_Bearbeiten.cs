@@ -27,41 +27,7 @@ namespace Lagerverwaltung___Mode
 
         private void Benutzer_Bearbeiten_Load(object sender, EventArgs e)
         {
-            MySqlCommand select = new MySqlCommand("SELECT * FROM t_benutzer;", con);
 
-            // Liste mit allen Benutzern
-            List<Benutzer> benutzerListe = new List<Benutzer>();
-
-            try
-            {
-                con.Open();
-                MySqlDataReader reader = select.ExecuteReader();
-                while (reader.Read())
-                {
-                    //reihen++;
-                    // Liste befüllen
-                    Benutzer bn = new Benutzer(reader[1].ToString(), reader[2].ToString(), reader[3].ToString(), reader[4].ToString(), reader[5].ToString());
-                    benutzerListe.Add(bn);
-                }
-                con.Close();
-            }
-            catch(MySqlException ex)
-            {
-                MessageBox.Show(ex.ToString());
-            }
-
-            //MessageBox.Show("reihen: " + reihen.ToString());
-            //MessageBox.Show(benutzerListe.Count.ToString());
-
-            tlp_Benutzer.RowCount = benutzerListe.Count;
-            TabelleBefuellen(benutzerListe, benutzerListe.Count);
-        }
-
-        private void TabelleBefuellen(List<Benutzer> liste, int reihen)
-        {
-            tlp_Benutzer.Controls.Add(new Label() { Text = "Hi1" }, 0, 0);
-            tlp_Benutzer.Controls.Add(new Label() { Text = "Hi2" }, 0, 1);
-            tlp_Benutzer.Controls.Add(new Label() { Text = "Hi3" }, 0, 2);
         }
     }
 
