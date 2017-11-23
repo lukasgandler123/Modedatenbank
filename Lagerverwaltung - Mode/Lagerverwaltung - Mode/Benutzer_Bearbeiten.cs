@@ -139,8 +139,9 @@ namespace Lagerverwaltung___Mode
 
         private void dgv_Benutzer_CellClick(object sender, DataGridViewCellEventArgs e)
         {
+
             // Passwort zurücksetzen
-            if(e.ColumnIndex == 8)
+            if (e.ColumnIndex == 8 && e.RowIndex > 0)
             {
                 DataGridViewRow row = dgv_Benutzer.Rows[e.RowIndex];
                 PasswortReseten pr = new PasswortReseten(Convert.ToInt32(row.Cells[0].Value));
@@ -148,9 +149,10 @@ namespace Lagerverwaltung___Mode
             }
 
             // Löschen
-            if(e.ColumnIndex == 9)
+            if(e.ColumnIndex == 9 && e.RowIndex > 0)
             {
                 DataGridViewRow row = dgv_Benutzer.Rows[e.RowIndex];
+                //DataGridViewRow row = dgv_Benutzer.Rows[e.RowIndex];
                 DialogResult dr = MessageBox.Show("Wollen Sie den Benutzer '" + row.Cells[6].Value.ToString() + "' wirklich löschen", "Achtung", MessageBoxButtons.YesNo);
 
                 if(dr == DialogResult.Yes)
@@ -165,6 +167,7 @@ namespace Lagerverwaltung___Mode
 
                         MessageBox.Show("Benutzer erfolgreich gelöscht");
 
+                        // Ansicht aktualisieren
                         dgv_Benutzer.DataSource = t_benutzerTableAdapter.GetData();
                     }
                     catch(MySqlException ex)
