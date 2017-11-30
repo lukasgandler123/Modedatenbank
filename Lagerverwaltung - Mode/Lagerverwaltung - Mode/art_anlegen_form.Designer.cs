@@ -29,44 +29,28 @@
         private void InitializeComponent()
         {
             this.art_anlegen_bezeichnung = new System.Windows.Forms.TextBox();
-            this.art_anlegen_marke = new System.Windows.Forms.TextBox();
-            this.art_anlegen_kategorie = new System.Windows.Forms.TextBox();
             this.art_anlegen_artnr = new System.Windows.Forms.TextBox();
             this.lbl_Telefon = new System.Windows.Forms.Label();
             this.lbl_email = new System.Windows.Forms.Label();
             this.lbl_Nachname = new System.Windows.Forms.Label();
             this.lbl_Vorname = new System.Windows.Forms.Label();
             this.btn_anlegen = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.art_anlegen_groesse = new System.Windows.Forms.TextBox();
+            this.art_anlegen_kategorie = new System.Windows.Forms.ComboBox();
+            this.art_anlegen_marke = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // art_anlegen_bezeichnung
             // 
             this.art_anlegen_bezeichnung.Location = new System.Drawing.Point(142, 84);
             this.art_anlegen_bezeichnung.Name = "art_anlegen_bezeichnung";
-            this.art_anlegen_bezeichnung.Size = new System.Drawing.Size(216, 20);
+            this.art_anlegen_bezeichnung.Size = new System.Drawing.Size(213, 20);
             this.art_anlegen_bezeichnung.TabIndex = 32;
-            // 
-            // art_anlegen_marke
-            // 
-            this.art_anlegen_marke.Location = new System.Drawing.Point(142, 58);
-            this.art_anlegen_marke.Name = "art_anlegen_marke";
-            this.art_anlegen_marke.Size = new System.Drawing.Size(216, 20);
-            this.art_anlegen_marke.TabIndex = 31;
-            // 
-            // art_anlegen_kategorie
-            // 
-            this.art_anlegen_kategorie.Location = new System.Drawing.Point(142, 32);
-            this.art_anlegen_kategorie.Name = "art_anlegen_kategorie";
-            this.art_anlegen_kategorie.Size = new System.Drawing.Size(216, 20);
-            this.art_anlegen_kategorie.TabIndex = 30;
             // 
             // art_anlegen_artnr
             // 
             this.art_anlegen_artnr.Location = new System.Drawing.Point(142, 6);
             this.art_anlegen_artnr.Name = "art_anlegen_artnr";
-            this.art_anlegen_artnr.Size = new System.Drawing.Size(216, 20);
+            this.art_anlegen_artnr.Size = new System.Drawing.Size(213, 20);
             this.art_anlegen_artnr.TabIndex = 29;
             this.art_anlegen_artnr.TextChanged += new System.EventHandler(this.art_anlegen_artnr_TextChanged);
             // 
@@ -108,39 +92,38 @@
             // 
             // btn_anlegen
             // 
-            this.btn_anlegen.Location = new System.Drawing.Point(12, 155);
+            this.btn_anlegen.Location = new System.Drawing.Point(12, 110);
             this.btn_anlegen.Name = "btn_anlegen";
             this.btn_anlegen.Size = new System.Drawing.Size(343, 65);
             this.btn_anlegen.TabIndex = 19;
             this.btn_anlegen.Text = "Artikel anlegen";
             this.btn_anlegen.UseVisualStyleBackColor = true;
+            this.btn_anlegen.Click += new System.EventHandler(this.btn_anlegen_Click);
             // 
-            // label1
+            // art_anlegen_kategorie
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 113);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(36, 13);
-            this.label1.TabIndex = 33;
-            this.label1.Text = "Größe";
+            this.art_anlegen_kategorie.FormattingEnabled = true;
+            this.art_anlegen_kategorie.Location = new System.Drawing.Point(142, 30);
+            this.art_anlegen_kategorie.Name = "art_anlegen_kategorie";
+            this.art_anlegen_kategorie.Size = new System.Drawing.Size(213, 21);
+            this.art_anlegen_kategorie.TabIndex = 33;
             // 
-            // art_anlegen_groesse
+            // art_anlegen_marke
             // 
-            this.art_anlegen_groesse.Location = new System.Drawing.Point(142, 110);
-            this.art_anlegen_groesse.Name = "art_anlegen_groesse";
-            this.art_anlegen_groesse.Size = new System.Drawing.Size(216, 20);
-            this.art_anlegen_groesse.TabIndex = 34;
+            this.art_anlegen_marke.FormattingEnabled = true;
+            this.art_anlegen_marke.Location = new System.Drawing.Point(142, 57);
+            this.art_anlegen_marke.Name = "art_anlegen_marke";
+            this.art_anlegen_marke.Size = new System.Drawing.Size(213, 21);
+            this.art_anlegen_marke.TabIndex = 34;
             // 
             // art_anlegen_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(367, 232);
-            this.Controls.Add(this.art_anlegen_groesse);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.art_anlegen_bezeichnung);
+            this.ClientSize = new System.Drawing.Size(367, 180);
             this.Controls.Add(this.art_anlegen_marke);
             this.Controls.Add(this.art_anlegen_kategorie);
+            this.Controls.Add(this.art_anlegen_bezeichnung);
             this.Controls.Add(this.art_anlegen_artnr);
             this.Controls.Add(this.lbl_Telefon);
             this.Controls.Add(this.lbl_email);
@@ -156,15 +139,13 @@
 
         #endregion
         private System.Windows.Forms.TextBox art_anlegen_bezeichnung;
-        private System.Windows.Forms.TextBox art_anlegen_marke;
-        private System.Windows.Forms.TextBox art_anlegen_kategorie;
         private System.Windows.Forms.TextBox art_anlegen_artnr;
         private System.Windows.Forms.Label lbl_Telefon;
         private System.Windows.Forms.Label lbl_email;
         private System.Windows.Forms.Label lbl_Nachname;
         private System.Windows.Forms.Label lbl_Vorname;
         private System.Windows.Forms.Button btn_anlegen;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox art_anlegen_groesse;
+        private System.Windows.Forms.ComboBox art_anlegen_kategorie;
+        private System.Windows.Forms.ComboBox art_anlegen_marke;
     }
 }
