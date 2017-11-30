@@ -50,5 +50,23 @@ namespace Lagerverwaltung___Mode
             Benutzer_Bearbeiten bb = new Benutzer_Bearbeiten();
             bb.ShowDialog();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            //art_anlegen_form frm = new artanlegen_form();
+            //frm.Show();
+        }
+
+        private void benutzerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_art_anlegen_Click(object sender, EventArgs e)
+        {
+            art_anlegen_form frm = new art_anlegen_form();
+            frm.Show();
+
+        }
     }
 }

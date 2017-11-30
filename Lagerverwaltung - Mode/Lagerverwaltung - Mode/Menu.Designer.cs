@@ -40,84 +40,84 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.tbp_eingang = new System.Windows.Forms.TabPage();
             this.gpx_eingan = new System.Windows.Forms.GroupBox();
-            this.lbl_e_artikel = new System.Windows.Forms.Label();
-            this.lbl_e_bezeichnung = new System.Windows.Forms.Label();
-            this.lbl_e_lieferantennummer = new System.Windows.Forms.Label();
-            this.lbl_e_lieferant = new System.Windows.Forms.Label();
-            this.lbl_e_menge = new System.Windows.Forms.Label();
-            this.lbl_eingang_datum = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.button8 = new System.Windows.Forms.Button();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.button8 = new System.Windows.Forms.Button();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.lbl_eingang_datum = new System.Windows.Forms.Label();
+            this.lbl_e_menge = new System.Windows.Forms.Label();
+            this.lbl_e_lieferant = new System.Windows.Forms.Label();
+            this.lbl_e_lieferantennummer = new System.Windows.Forms.Label();
+            this.lbl_e_bezeichnung = new System.Windows.Forms.Label();
+            this.lbl_e_artikel = new System.Windows.Forms.Label();
             this.tbp_ausgang = new System.Windows.Forms.TabPage();
             this.gpx_ausgang = new System.Windows.Forms.GroupBox();
-            this.lbl_a_artikel = new System.Windows.Forms.Label();
-            this.lbl_a_anmerkung = new System.Windows.Forms.Label();
-            this.lbl_a_datum = new System.Windows.Forms.Label();
-            this.lbl_a_kundennummer = new System.Windows.Forms.Label();
-            this.lbl_a_menge = new System.Windows.Forms.Label();
-            this.lbl_a_kunde = new System.Windows.Forms.Label();
-            this.lbl_a_bezeichnung = new System.Windows.Forms.Label();
-            this.cb_a_lieferschein = new System.Windows.Forms.CheckBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.btn_a_erfassen = new System.Windows.Forms.Button();
             this.rtxt_a_anmerkung = new System.Windows.Forms.RichTextBox();
+            this.btn_a_erfassen = new System.Windows.Forms.Button();
+            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.cb_a_lieferschein = new System.Windows.Forms.CheckBox();
+            this.lbl_a_bezeichnung = new System.Windows.Forms.Label();
+            this.lbl_a_kunde = new System.Windows.Forms.Label();
+            this.lbl_a_menge = new System.Windows.Forms.Label();
+            this.lbl_a_kundennummer = new System.Windows.Forms.Label();
+            this.lbl_a_datum = new System.Windows.Forms.Label();
+            this.lbl_a_anmerkung = new System.Windows.Forms.Label();
+            this.lbl_a_artikel = new System.Windows.Forms.Label();
             this.tbp_lager = new System.Windows.Forms.TabPage();
             this.gpx_eingang = new System.Windows.Forms.GroupBox();
-            this.lbl_l_artikel = new System.Windows.Forms.Label();
-            this.lbl_l_lieferant = new System.Windows.Forms.Label();
-            this.lbl_l_marke = new System.Windows.Forms.Label();
-            this.lbl_l_kategorie = new System.Windows.Forms.Label();
-            this.textBox14 = new System.Windows.Forms.TextBox();
-            this.textBox15 = new System.Windows.Forms.TextBox();
-            this.textBox16 = new System.Windows.Forms.TextBox();
-            this.textBox17 = new System.Windows.Forms.TextBox();
             this.btn_l_lagerstand = new System.Windows.Forms.Button();
+            this.textBox17 = new System.Windows.Forms.TextBox();
+            this.textBox16 = new System.Windows.Forms.TextBox();
+            this.textBox15 = new System.Windows.Forms.TextBox();
+            this.textBox14 = new System.Windows.Forms.TextBox();
+            this.lbl_l_kategorie = new System.Windows.Forms.Label();
+            this.lbl_l_marke = new System.Windows.Forms.Label();
+            this.lbl_l_lieferant = new System.Windows.Forms.Label();
+            this.lbl_l_artikel = new System.Windows.Forms.Label();
             this.tbc_eingang = new System.Windows.Forms.TabControl();
             this.tbp_Artikel = new System.Windows.Forms.TabPage();
-            this.lbl_art_artikelnummer = new System.Windows.Forms.Label();
-            this.lbl_art_kategorie = new System.Windows.Forms.Label();
-            this.lbl_art_marke = new System.Windows.Forms.Label();
-            this.lbl_art_bezeichnung = new System.Windows.Forms.Label();
-            this.txt_art_artikelnummer = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.txt_art_bezeichnung = new System.Windows.Forms.TextBox();
-            this.txt_art_marke = new System.Windows.Forms.TextBox();
             this.txt_art_kategorie = new System.Windows.Forms.TextBox();
+            this.txt_art_marke = new System.Windows.Forms.TextBox();
+            this.txt_art_bezeichnung = new System.Windows.Forms.TextBox();
+            this.txt_art_artikelnummer = new System.Windows.Forms.TextBox();
+            this.btn_art_anlegen = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.lbl_art_bezeichnung = new System.Windows.Forms.Label();
+            this.lbl_art_marke = new System.Windows.Forms.Label();
+            this.lbl_art_kategorie = new System.Windows.Forms.Label();
+            this.lbl_art_artikelnummer = new System.Windows.Forms.Label();
             this.tbp_Kunde = new System.Windows.Forms.TabPage();
-            this.lbl_k_kundennummer = new System.Windows.Forms.Label();
-            this.lbl_k_kunde = new System.Windows.Forms.Label();
-            this.lbl_k_land = new System.Windows.Forms.Label();
-            this.txt_k_kundennummer = new System.Windows.Forms.TextBox();
-            this.textBox23 = new System.Windows.Forms.TextBox();
-            this.textBox18 = new System.Windows.Forms.TextBox();
-            this.txt_k_kunde = new System.Windows.Forms.TextBox();
-            this.button6 = new System.Windows.Forms.Button();
-            this.lbl_l_ort = new System.Windows.Forms.Label();
             this.btn_e_erfassen = new System.Windows.Forms.Button();
+            this.lbl_l_ort = new System.Windows.Forms.Label();
+            this.button6 = new System.Windows.Forms.Button();
+            this.txt_k_kunde = new System.Windows.Forms.TextBox();
+            this.textBox18 = new System.Windows.Forms.TextBox();
+            this.textBox23 = new System.Windows.Forms.TextBox();
+            this.txt_k_kundennummer = new System.Windows.Forms.TextBox();
+            this.lbl_k_land = new System.Windows.Forms.Label();
+            this.lbl_k_kunde = new System.Windows.Forms.Label();
+            this.lbl_k_kundennummer = new System.Windows.Forms.Label();
             this.tbp_Lieferant = new System.Windows.Forms.TabPage();
-            this.lbl_lief_lieferantennummer = new System.Windows.Forms.Label();
-            this.lbl_lief_lieferant = new System.Windows.Forms.Label();
-            this.lbl_lief_land = new System.Windows.Forms.Label();
-            this.lbl_lief_ort = new System.Windows.Forms.Label();
-            this.lbl_lief_anmerkung = new System.Windows.Forms.Label();
-            this.txt_lief_lieferantennummer = new System.Windows.Forms.TextBox();
-            this.txt_lief_ort = new System.Windows.Forms.TextBox();
-            this.txt_lief_land = new System.Windows.Forms.TextBox();
-            this.txt_lief_lieferant = new System.Windows.Forms.TextBox();
-            this.rtxt_lief_anmerkung = new System.Windows.Forms.RichTextBox();
-            this.button5 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.rtxt_lief_anmerkung = new System.Windows.Forms.RichTextBox();
+            this.txt_lief_lieferant = new System.Windows.Forms.TextBox();
+            this.txt_lief_land = new System.Windows.Forms.TextBox();
+            this.txt_lief_ort = new System.Windows.Forms.TextBox();
+            this.txt_lief_lieferantennummer = new System.Windows.Forms.TextBox();
+            this.lbl_lief_anmerkung = new System.Windows.Forms.Label();
+            this.lbl_lief_ort = new System.Windows.Forms.Label();
+            this.lbl_lief_land = new System.Windows.Forms.Label();
+            this.lbl_lief_lieferant = new System.Windows.Forms.Label();
+            this.lbl_lief_lieferantennummer = new System.Windows.Forms.Label();
             this.tbc_Daten = new System.Windows.Forms.TabControl();
             this.menuStrip1.SuspendLayout();
             this.tbp_eingang.SuspendLayout();
@@ -167,6 +167,7 @@
             this.benutzerToolStripMenuItem.Name = "benutzerToolStripMenuItem";
             this.benutzerToolStripMenuItem.Size = new System.Drawing.Size(65, 20);
             this.benutzerToolStripMenuItem.Text = "Benutzer";
+            this.benutzerToolStripMenuItem.Click += new System.EventHandler(this.benutzerToolStripMenuItem_Click);
             // 
             // neuenBenutzerAnlegenToolStripMenuItem
             // 
@@ -228,73 +229,33 @@
             this.gpx_eingan.TabStop = false;
             this.gpx_eingan.Text = "Eingang erfassen";
             // 
-            // lbl_e_artikel
+            // textBox6
             // 
-            this.lbl_e_artikel.AutoSize = true;
-            this.lbl_e_artikel.Location = new System.Drawing.Point(6, 25);
-            this.lbl_e_artikel.Name = "lbl_e_artikel";
-            this.lbl_e_artikel.Size = new System.Drawing.Size(73, 13);
-            this.lbl_e_artikel.TabIndex = 0;
-            this.lbl_e_artikel.Text = "Artikelnummer";
+            this.textBox6.Location = new System.Drawing.Point(120, 48);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(181, 20);
+            this.textBox6.TabIndex = 11;
             // 
-            // lbl_e_bezeichnung
+            // textBox5
             // 
-            this.lbl_e_bezeichnung.AutoSize = true;
-            this.lbl_e_bezeichnung.Location = new System.Drawing.Point(6, 51);
-            this.lbl_e_bezeichnung.Name = "lbl_e_bezeichnung";
-            this.lbl_e_bezeichnung.Size = new System.Drawing.Size(69, 13);
-            this.lbl_e_bezeichnung.TabIndex = 1;
-            this.lbl_e_bezeichnung.Text = "Bezeichnung";
+            this.textBox5.Location = new System.Drawing.Point(120, 76);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(181, 20);
+            this.textBox5.TabIndex = 10;
             // 
-            // lbl_e_lieferantennummer
+            // textBox4
             // 
-            this.lbl_e_lieferantennummer.AutoSize = true;
-            this.lbl_e_lieferantennummer.Location = new System.Drawing.Point(6, 79);
-            this.lbl_e_lieferantennummer.Name = "lbl_e_lieferantennummer";
-            this.lbl_e_lieferantennummer.Size = new System.Drawing.Size(97, 13);
-            this.lbl_e_lieferantennummer.TabIndex = 2;
-            this.lbl_e_lieferantennummer.Text = "Lieferantennummer";
+            this.textBox4.Location = new System.Drawing.Point(120, 102);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(181, 20);
+            this.textBox4.TabIndex = 9;
             // 
-            // lbl_e_lieferant
+            // textBox3
             // 
-            this.lbl_e_lieferant.AutoSize = true;
-            this.lbl_e_lieferant.Location = new System.Drawing.Point(6, 105);
-            this.lbl_e_lieferant.Name = "lbl_e_lieferant";
-            this.lbl_e_lieferant.Size = new System.Drawing.Size(48, 13);
-            this.lbl_e_lieferant.TabIndex = 3;
-            this.lbl_e_lieferant.Text = "Lieferant";
-            // 
-            // lbl_e_menge
-            // 
-            this.lbl_e_menge.AutoSize = true;
-            this.lbl_e_menge.Location = new System.Drawing.Point(6, 131);
-            this.lbl_e_menge.Name = "lbl_e_menge";
-            this.lbl_e_menge.Size = new System.Drawing.Size(40, 13);
-            this.lbl_e_menge.TabIndex = 4;
-            this.lbl_e_menge.Text = "Menge";
-            // 
-            // lbl_eingang_datum
-            // 
-            this.lbl_eingang_datum.AutoSize = true;
-            this.lbl_eingang_datum.Location = new System.Drawing.Point(6, 157);
-            this.lbl_eingang_datum.Name = "lbl_eingang_datum";
-            this.lbl_eingang_datum.Size = new System.Drawing.Size(38, 13);
-            this.lbl_eingang_datum.TabIndex = 5;
-            this.lbl_eingang_datum.Text = "Datum";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(120, 22);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(181, 20);
-            this.textBox1.TabIndex = 6;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(120, 154);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(181, 20);
-            this.textBox2.TabIndex = 7;
+            this.textBox3.Location = new System.Drawing.Point(120, 128);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(181, 20);
+            this.textBox3.TabIndex = 8;
             // 
             // button8
             // 
@@ -305,33 +266,73 @@
             this.button8.Text = "Kunde anzeigen";
             this.button8.UseVisualStyleBackColor = true;
             // 
-            // textBox3
+            // textBox2
             // 
-            this.textBox3.Location = new System.Drawing.Point(120, 128);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(181, 20);
-            this.textBox3.TabIndex = 8;
+            this.textBox2.Location = new System.Drawing.Point(120, 154);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(181, 20);
+            this.textBox2.TabIndex = 7;
             // 
-            // textBox4
+            // textBox1
             // 
-            this.textBox4.Location = new System.Drawing.Point(120, 102);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(181, 20);
-            this.textBox4.TabIndex = 9;
+            this.textBox1.Location = new System.Drawing.Point(120, 22);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(181, 20);
+            this.textBox1.TabIndex = 6;
             // 
-            // textBox5
+            // lbl_eingang_datum
             // 
-            this.textBox5.Location = new System.Drawing.Point(120, 76);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(181, 20);
-            this.textBox5.TabIndex = 10;
+            this.lbl_eingang_datum.AutoSize = true;
+            this.lbl_eingang_datum.Location = new System.Drawing.Point(6, 157);
+            this.lbl_eingang_datum.Name = "lbl_eingang_datum";
+            this.lbl_eingang_datum.Size = new System.Drawing.Size(38, 13);
+            this.lbl_eingang_datum.TabIndex = 5;
+            this.lbl_eingang_datum.Text = "Datum";
             // 
-            // textBox6
+            // lbl_e_menge
             // 
-            this.textBox6.Location = new System.Drawing.Point(120, 48);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(181, 20);
-            this.textBox6.TabIndex = 11;
+            this.lbl_e_menge.AutoSize = true;
+            this.lbl_e_menge.Location = new System.Drawing.Point(6, 131);
+            this.lbl_e_menge.Name = "lbl_e_menge";
+            this.lbl_e_menge.Size = new System.Drawing.Size(40, 13);
+            this.lbl_e_menge.TabIndex = 4;
+            this.lbl_e_menge.Text = "Menge";
+            // 
+            // lbl_e_lieferant
+            // 
+            this.lbl_e_lieferant.AutoSize = true;
+            this.lbl_e_lieferant.Location = new System.Drawing.Point(6, 105);
+            this.lbl_e_lieferant.Name = "lbl_e_lieferant";
+            this.lbl_e_lieferant.Size = new System.Drawing.Size(48, 13);
+            this.lbl_e_lieferant.TabIndex = 3;
+            this.lbl_e_lieferant.Text = "Lieferant";
+            // 
+            // lbl_e_lieferantennummer
+            // 
+            this.lbl_e_lieferantennummer.AutoSize = true;
+            this.lbl_e_lieferantennummer.Location = new System.Drawing.Point(6, 79);
+            this.lbl_e_lieferantennummer.Name = "lbl_e_lieferantennummer";
+            this.lbl_e_lieferantennummer.Size = new System.Drawing.Size(97, 13);
+            this.lbl_e_lieferantennummer.TabIndex = 2;
+            this.lbl_e_lieferantennummer.Text = "Lieferantennummer";
+            // 
+            // lbl_e_bezeichnung
+            // 
+            this.lbl_e_bezeichnung.AutoSize = true;
+            this.lbl_e_bezeichnung.Location = new System.Drawing.Point(6, 51);
+            this.lbl_e_bezeichnung.Name = "lbl_e_bezeichnung";
+            this.lbl_e_bezeichnung.Size = new System.Drawing.Size(69, 13);
+            this.lbl_e_bezeichnung.TabIndex = 1;
+            this.lbl_e_bezeichnung.Text = "Bezeichnung";
+            // 
+            // lbl_e_artikel
+            // 
+            this.lbl_e_artikel.AutoSize = true;
+            this.lbl_e_artikel.Location = new System.Drawing.Point(6, 25);
+            this.lbl_e_artikel.Name = "lbl_e_artikel";
+            this.lbl_e_artikel.Size = new System.Drawing.Size(73, 13);
+            this.lbl_e_artikel.TabIndex = 0;
+            this.lbl_e_artikel.Text = "Artikelnummer";
             // 
             // tbp_ausgang
             // 
@@ -369,68 +370,64 @@
             this.gpx_ausgang.TabStop = false;
             this.gpx_ausgang.Text = "Ausgänge";
             // 
-            // lbl_a_artikel
+            // rtxt_a_anmerkung
             // 
-            this.lbl_a_artikel.AutoSize = true;
-            this.lbl_a_artikel.Location = new System.Drawing.Point(6, 33);
-            this.lbl_a_artikel.Name = "lbl_a_artikel";
-            this.lbl_a_artikel.Size = new System.Drawing.Size(73, 13);
-            this.lbl_a_artikel.TabIndex = 0;
-            this.lbl_a_artikel.Text = "Artikelnummer";
+            this.rtxt_a_anmerkung.Location = new System.Drawing.Point(102, 192);
+            this.rtxt_a_anmerkung.Name = "rtxt_a_anmerkung";
+            this.rtxt_a_anmerkung.Size = new System.Drawing.Size(199, 124);
+            this.rtxt_a_anmerkung.TabIndex = 16;
+            this.rtxt_a_anmerkung.Text = "";
             // 
-            // lbl_a_anmerkung
+            // btn_a_erfassen
             // 
-            this.lbl_a_anmerkung.AutoSize = true;
-            this.lbl_a_anmerkung.Location = new System.Drawing.Point(6, 198);
-            this.lbl_a_anmerkung.Name = "lbl_a_anmerkung";
-            this.lbl_a_anmerkung.Size = new System.Drawing.Size(61, 13);
-            this.lbl_a_anmerkung.TabIndex = 1;
-            this.lbl_a_anmerkung.Text = "Anmerkung";
+            this.btn_a_erfassen.Location = new System.Drawing.Point(0, 371);
+            this.btn_a_erfassen.Name = "btn_a_erfassen";
+            this.btn_a_erfassen.Size = new System.Drawing.Size(304, 61);
+            this.btn_a_erfassen.TabIndex = 15;
+            this.btn_a_erfassen.Text = "Ausgang";
+            this.btn_a_erfassen.UseVisualStyleBackColor = true;
             // 
-            // lbl_a_datum
+            // textBox13
             // 
-            this.lbl_a_datum.AutoSize = true;
-            this.lbl_a_datum.Location = new System.Drawing.Point(8, 163);
-            this.lbl_a_datum.Name = "lbl_a_datum";
-            this.lbl_a_datum.Size = new System.Drawing.Size(38, 13);
-            this.lbl_a_datum.TabIndex = 2;
-            this.lbl_a_datum.Text = "Datum";
+            this.textBox13.Location = new System.Drawing.Point(102, 56);
+            this.textBox13.Name = "textBox13";
+            this.textBox13.Size = new System.Drawing.Size(199, 20);
+            this.textBox13.TabIndex = 14;
             // 
-            // lbl_a_kundennummer
+            // textBox12
             // 
-            this.lbl_a_kundennummer.AutoSize = true;
-            this.lbl_a_kundennummer.Location = new System.Drawing.Point(6, 85);
-            this.lbl_a_kundennummer.Name = "lbl_a_kundennummer";
-            this.lbl_a_kundennummer.Size = new System.Drawing.Size(81, 13);
-            this.lbl_a_kundennummer.TabIndex = 3;
-            this.lbl_a_kundennummer.Text = "Kundennummer";
+            this.textBox12.Location = new System.Drawing.Point(102, 82);
+            this.textBox12.Name = "textBox12";
+            this.textBox12.Size = new System.Drawing.Size(198, 20);
+            this.textBox12.TabIndex = 13;
             // 
-            // lbl_a_menge
+            // textBox11
             // 
-            this.lbl_a_menge.AutoSize = true;
-            this.lbl_a_menge.Location = new System.Drawing.Point(6, 137);
-            this.lbl_a_menge.Name = "lbl_a_menge";
-            this.lbl_a_menge.Size = new System.Drawing.Size(40, 13);
-            this.lbl_a_menge.TabIndex = 4;
-            this.lbl_a_menge.Text = "Menge";
+            this.textBox11.Location = new System.Drawing.Point(102, 108);
+            this.textBox11.Name = "textBox11";
+            this.textBox11.Size = new System.Drawing.Size(198, 20);
+            this.textBox11.TabIndex = 12;
             // 
-            // lbl_a_kunde
+            // textBox10
             // 
-            this.lbl_a_kunde.AutoSize = true;
-            this.lbl_a_kunde.Location = new System.Drawing.Point(8, 110);
-            this.lbl_a_kunde.Name = "lbl_a_kunde";
-            this.lbl_a_kunde.Size = new System.Drawing.Size(38, 13);
-            this.lbl_a_kunde.TabIndex = 5;
-            this.lbl_a_kunde.Text = "Kunde";
+            this.textBox10.Location = new System.Drawing.Point(102, 134);
+            this.textBox10.Name = "textBox10";
+            this.textBox10.Size = new System.Drawing.Size(199, 20);
+            this.textBox10.TabIndex = 11;
             // 
-            // lbl_a_bezeichnung
+            // textBox8
             // 
-            this.lbl_a_bezeichnung.AutoSize = true;
-            this.lbl_a_bezeichnung.Location = new System.Drawing.Point(6, 59);
-            this.lbl_a_bezeichnung.Name = "lbl_a_bezeichnung";
-            this.lbl_a_bezeichnung.Size = new System.Drawing.Size(69, 13);
-            this.lbl_a_bezeichnung.TabIndex = 6;
-            this.lbl_a_bezeichnung.Text = "Bezeichnung";
+            this.textBox8.Location = new System.Drawing.Point(102, 160);
+            this.textBox8.Name = "textBox8";
+            this.textBox8.Size = new System.Drawing.Size(198, 20);
+            this.textBox8.TabIndex = 9;
+            // 
+            // textBox7
+            // 
+            this.textBox7.Location = new System.Drawing.Point(102, 30);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(199, 20);
+            this.textBox7.TabIndex = 8;
             // 
             // cb_a_lieferschein
             // 
@@ -442,64 +439,68 @@
             this.cb_a_lieferschein.Text = "Lieferschein";
             this.cb_a_lieferschein.UseVisualStyleBackColor = true;
             // 
-            // textBox7
+            // lbl_a_bezeichnung
             // 
-            this.textBox7.Location = new System.Drawing.Point(102, 30);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(199, 20);
-            this.textBox7.TabIndex = 8;
+            this.lbl_a_bezeichnung.AutoSize = true;
+            this.lbl_a_bezeichnung.Location = new System.Drawing.Point(6, 59);
+            this.lbl_a_bezeichnung.Name = "lbl_a_bezeichnung";
+            this.lbl_a_bezeichnung.Size = new System.Drawing.Size(69, 13);
+            this.lbl_a_bezeichnung.TabIndex = 6;
+            this.lbl_a_bezeichnung.Text = "Bezeichnung";
             // 
-            // textBox8
+            // lbl_a_kunde
             // 
-            this.textBox8.Location = new System.Drawing.Point(102, 160);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(198, 20);
-            this.textBox8.TabIndex = 9;
+            this.lbl_a_kunde.AutoSize = true;
+            this.lbl_a_kunde.Location = new System.Drawing.Point(8, 110);
+            this.lbl_a_kunde.Name = "lbl_a_kunde";
+            this.lbl_a_kunde.Size = new System.Drawing.Size(38, 13);
+            this.lbl_a_kunde.TabIndex = 5;
+            this.lbl_a_kunde.Text = "Kunde";
             // 
-            // textBox10
+            // lbl_a_menge
             // 
-            this.textBox10.Location = new System.Drawing.Point(102, 134);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(199, 20);
-            this.textBox10.TabIndex = 11;
+            this.lbl_a_menge.AutoSize = true;
+            this.lbl_a_menge.Location = new System.Drawing.Point(6, 137);
+            this.lbl_a_menge.Name = "lbl_a_menge";
+            this.lbl_a_menge.Size = new System.Drawing.Size(40, 13);
+            this.lbl_a_menge.TabIndex = 4;
+            this.lbl_a_menge.Text = "Menge";
             // 
-            // textBox11
+            // lbl_a_kundennummer
             // 
-            this.textBox11.Location = new System.Drawing.Point(102, 108);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(198, 20);
-            this.textBox11.TabIndex = 12;
+            this.lbl_a_kundennummer.AutoSize = true;
+            this.lbl_a_kundennummer.Location = new System.Drawing.Point(6, 85);
+            this.lbl_a_kundennummer.Name = "lbl_a_kundennummer";
+            this.lbl_a_kundennummer.Size = new System.Drawing.Size(81, 13);
+            this.lbl_a_kundennummer.TabIndex = 3;
+            this.lbl_a_kundennummer.Text = "Kundennummer";
             // 
-            // textBox12
+            // lbl_a_datum
             // 
-            this.textBox12.Location = new System.Drawing.Point(102, 82);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(198, 20);
-            this.textBox12.TabIndex = 13;
+            this.lbl_a_datum.AutoSize = true;
+            this.lbl_a_datum.Location = new System.Drawing.Point(8, 163);
+            this.lbl_a_datum.Name = "lbl_a_datum";
+            this.lbl_a_datum.Size = new System.Drawing.Size(38, 13);
+            this.lbl_a_datum.TabIndex = 2;
+            this.lbl_a_datum.Text = "Datum";
             // 
-            // textBox13
+            // lbl_a_anmerkung
             // 
-            this.textBox13.Location = new System.Drawing.Point(102, 56);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(199, 20);
-            this.textBox13.TabIndex = 14;
+            this.lbl_a_anmerkung.AutoSize = true;
+            this.lbl_a_anmerkung.Location = new System.Drawing.Point(6, 198);
+            this.lbl_a_anmerkung.Name = "lbl_a_anmerkung";
+            this.lbl_a_anmerkung.Size = new System.Drawing.Size(61, 13);
+            this.lbl_a_anmerkung.TabIndex = 1;
+            this.lbl_a_anmerkung.Text = "Anmerkung";
             // 
-            // btn_a_erfassen
+            // lbl_a_artikel
             // 
-            this.btn_a_erfassen.Location = new System.Drawing.Point(0, 371);
-            this.btn_a_erfassen.Name = "btn_a_erfassen";
-            this.btn_a_erfassen.Size = new System.Drawing.Size(304, 61);
-            this.btn_a_erfassen.TabIndex = 15;
-            this.btn_a_erfassen.Text = "Ausgang";
-            this.btn_a_erfassen.UseVisualStyleBackColor = true;
-            // 
-            // rtxt_a_anmerkung
-            // 
-            this.rtxt_a_anmerkung.Location = new System.Drawing.Point(102, 192);
-            this.rtxt_a_anmerkung.Name = "rtxt_a_anmerkung";
-            this.rtxt_a_anmerkung.Size = new System.Drawing.Size(199, 124);
-            this.rtxt_a_anmerkung.TabIndex = 16;
-            this.rtxt_a_anmerkung.Text = "";
+            this.lbl_a_artikel.AutoSize = true;
+            this.lbl_a_artikel.Location = new System.Drawing.Point(6, 33);
+            this.lbl_a_artikel.Name = "lbl_a_artikel";
+            this.lbl_a_artikel.Size = new System.Drawing.Size(73, 13);
+            this.lbl_a_artikel.TabIndex = 0;
+            this.lbl_a_artikel.Text = "Artikelnummer";
             // 
             // tbp_lager
             // 
@@ -530,32 +531,42 @@
             this.gpx_eingang.TabStop = false;
             this.gpx_eingang.Text = "Eingänge";
             // 
-            // lbl_l_artikel
+            // btn_l_lagerstand
             // 
-            this.lbl_l_artikel.AutoSize = true;
-            this.lbl_l_artikel.Location = new System.Drawing.Point(0, 39);
-            this.lbl_l_artikel.Name = "lbl_l_artikel";
-            this.lbl_l_artikel.Size = new System.Drawing.Size(73, 13);
-            this.lbl_l_artikel.TabIndex = 0;
-            this.lbl_l_artikel.Text = "Artikelnummer";
+            this.btn_l_lagerstand.Location = new System.Drawing.Point(0, 368);
+            this.btn_l_lagerstand.Name = "btn_l_lagerstand";
+            this.btn_l_lagerstand.Size = new System.Drawing.Size(304, 64);
+            this.btn_l_lagerstand.TabIndex = 8;
+            this.btn_l_lagerstand.Text = "Lagerstand einsehen";
+            this.btn_l_lagerstand.UseVisualStyleBackColor = true;
             // 
-            // lbl_l_lieferant
+            // textBox17
             // 
-            this.lbl_l_lieferant.AutoSize = true;
-            this.lbl_l_lieferant.Location = new System.Drawing.Point(0, 65);
-            this.lbl_l_lieferant.Name = "lbl_l_lieferant";
-            this.lbl_l_lieferant.Size = new System.Drawing.Size(48, 13);
-            this.lbl_l_lieferant.TabIndex = 1;
-            this.lbl_l_lieferant.Text = "Lieferant";
+            this.textBox17.Location = new System.Drawing.Point(79, 62);
+            this.textBox17.Name = "textBox17";
+            this.textBox17.Size = new System.Drawing.Size(222, 20);
+            this.textBox17.TabIndex = 7;
             // 
-            // lbl_l_marke
+            // textBox16
             // 
-            this.lbl_l_marke.AutoSize = true;
-            this.lbl_l_marke.Location = new System.Drawing.Point(0, 117);
-            this.lbl_l_marke.Name = "lbl_l_marke";
-            this.lbl_l_marke.Size = new System.Drawing.Size(37, 13);
-            this.lbl_l_marke.TabIndex = 2;
-            this.lbl_l_marke.Text = "Marke";
+            this.textBox16.Location = new System.Drawing.Point(79, 88);
+            this.textBox16.Name = "textBox16";
+            this.textBox16.Size = new System.Drawing.Size(222, 20);
+            this.textBox16.TabIndex = 6;
+            // 
+            // textBox15
+            // 
+            this.textBox15.Location = new System.Drawing.Point(79, 114);
+            this.textBox15.Name = "textBox15";
+            this.textBox15.Size = new System.Drawing.Size(222, 20);
+            this.textBox15.TabIndex = 5;
+            // 
+            // textBox14
+            // 
+            this.textBox14.Location = new System.Drawing.Point(79, 36);
+            this.textBox14.Name = "textBox14";
+            this.textBox14.Size = new System.Drawing.Size(222, 20);
+            this.textBox14.TabIndex = 4;
             // 
             // lbl_l_kategorie
             // 
@@ -566,42 +577,32 @@
             this.lbl_l_kategorie.TabIndex = 3;
             this.lbl_l_kategorie.Text = "Kategorie";
             // 
-            // textBox14
+            // lbl_l_marke
             // 
-            this.textBox14.Location = new System.Drawing.Point(79, 36);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(222, 20);
-            this.textBox14.TabIndex = 4;
+            this.lbl_l_marke.AutoSize = true;
+            this.lbl_l_marke.Location = new System.Drawing.Point(0, 117);
+            this.lbl_l_marke.Name = "lbl_l_marke";
+            this.lbl_l_marke.Size = new System.Drawing.Size(37, 13);
+            this.lbl_l_marke.TabIndex = 2;
+            this.lbl_l_marke.Text = "Marke";
             // 
-            // textBox15
+            // lbl_l_lieferant
             // 
-            this.textBox15.Location = new System.Drawing.Point(79, 114);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(222, 20);
-            this.textBox15.TabIndex = 5;
+            this.lbl_l_lieferant.AutoSize = true;
+            this.lbl_l_lieferant.Location = new System.Drawing.Point(0, 65);
+            this.lbl_l_lieferant.Name = "lbl_l_lieferant";
+            this.lbl_l_lieferant.Size = new System.Drawing.Size(48, 13);
+            this.lbl_l_lieferant.TabIndex = 1;
+            this.lbl_l_lieferant.Text = "Lieferant";
             // 
-            // textBox16
+            // lbl_l_artikel
             // 
-            this.textBox16.Location = new System.Drawing.Point(79, 88);
-            this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(222, 20);
-            this.textBox16.TabIndex = 6;
-            // 
-            // textBox17
-            // 
-            this.textBox17.Location = new System.Drawing.Point(79, 62);
-            this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(222, 20);
-            this.textBox17.TabIndex = 7;
-            // 
-            // btn_l_lagerstand
-            // 
-            this.btn_l_lagerstand.Location = new System.Drawing.Point(0, 368);
-            this.btn_l_lagerstand.Name = "btn_l_lagerstand";
-            this.btn_l_lagerstand.Size = new System.Drawing.Size(304, 64);
-            this.btn_l_lagerstand.TabIndex = 8;
-            this.btn_l_lagerstand.Text = "Lagerstand einsehen";
-            this.btn_l_lagerstand.UseVisualStyleBackColor = true;
+            this.lbl_l_artikel.AutoSize = true;
+            this.lbl_l_artikel.Location = new System.Drawing.Point(0, 39);
+            this.lbl_l_artikel.Name = "lbl_l_artikel";
+            this.lbl_l_artikel.Size = new System.Drawing.Size(73, 13);
+            this.lbl_l_artikel.TabIndex = 0;
+            this.lbl_l_artikel.Text = "Artikelnummer";
             // 
             // tbc_eingang
             // 
@@ -620,7 +621,7 @@
             this.tbp_Artikel.Controls.Add(this.txt_art_marke);
             this.tbp_Artikel.Controls.Add(this.txt_art_bezeichnung);
             this.tbp_Artikel.Controls.Add(this.txt_art_artikelnummer);
-            this.tbp_Artikel.Controls.Add(this.button2);
+            this.tbp_Artikel.Controls.Add(this.btn_art_anlegen);
             this.tbp_Artikel.Controls.Add(this.button1);
             this.tbp_Artikel.Controls.Add(this.lbl_art_bezeichnung);
             this.tbp_Artikel.Controls.Add(this.lbl_art_marke);
@@ -633,41 +634,26 @@
             this.tbp_Artikel.Text = "Artikel";
             this.tbp_Artikel.UseVisualStyleBackColor = true;
             // 
-            // lbl_art_artikelnummer
+            // txt_art_kategorie
             // 
-            this.lbl_art_artikelnummer.AutoSize = true;
-            this.lbl_art_artikelnummer.Location = new System.Drawing.Point(3, 22);
-            this.lbl_art_artikelnummer.Name = "lbl_art_artikelnummer";
-            this.lbl_art_artikelnummer.Size = new System.Drawing.Size(73, 13);
-            this.lbl_art_artikelnummer.TabIndex = 10;
-            this.lbl_art_artikelnummer.Text = "Artikelnummer";
+            this.txt_art_kategorie.Location = new System.Drawing.Point(92, 45);
+            this.txt_art_kategorie.Name = "txt_art_kategorie";
+            this.txt_art_kategorie.Size = new System.Drawing.Size(264, 20);
+            this.txt_art_kategorie.TabIndex = 19;
             // 
-            // lbl_art_kategorie
+            // txt_art_marke
             // 
-            this.lbl_art_kategorie.AutoSize = true;
-            this.lbl_art_kategorie.Location = new System.Drawing.Point(3, 48);
-            this.lbl_art_kategorie.Name = "lbl_art_kategorie";
-            this.lbl_art_kategorie.Size = new System.Drawing.Size(52, 13);
-            this.lbl_art_kategorie.TabIndex = 11;
-            this.lbl_art_kategorie.Text = "Kategorie";
+            this.txt_art_marke.Location = new System.Drawing.Point(92, 71);
+            this.txt_art_marke.Name = "txt_art_marke";
+            this.txt_art_marke.Size = new System.Drawing.Size(264, 20);
+            this.txt_art_marke.TabIndex = 18;
             // 
-            // lbl_art_marke
+            // txt_art_bezeichnung
             // 
-            this.lbl_art_marke.AutoSize = true;
-            this.lbl_art_marke.Location = new System.Drawing.Point(3, 74);
-            this.lbl_art_marke.Name = "lbl_art_marke";
-            this.lbl_art_marke.Size = new System.Drawing.Size(37, 13);
-            this.lbl_art_marke.TabIndex = 12;
-            this.lbl_art_marke.Text = "Marke";
-            // 
-            // lbl_art_bezeichnung
-            // 
-            this.lbl_art_bezeichnung.AutoSize = true;
-            this.lbl_art_bezeichnung.Location = new System.Drawing.Point(3, 100);
-            this.lbl_art_bezeichnung.Name = "lbl_art_bezeichnung";
-            this.lbl_art_bezeichnung.Size = new System.Drawing.Size(69, 13);
-            this.lbl_art_bezeichnung.TabIndex = 13;
-            this.lbl_art_bezeichnung.Text = "Bezeichnung";
+            this.txt_art_bezeichnung.Location = new System.Drawing.Point(92, 97);
+            this.txt_art_bezeichnung.Name = "txt_art_bezeichnung";
+            this.txt_art_bezeichnung.Size = new System.Drawing.Size(264, 20);
+            this.txt_art_bezeichnung.TabIndex = 17;
             // 
             // txt_art_artikelnummer
             // 
@@ -675,6 +661,16 @@
             this.txt_art_artikelnummer.Name = "txt_art_artikelnummer";
             this.txt_art_artikelnummer.Size = new System.Drawing.Size(264, 20);
             this.txt_art_artikelnummer.TabIndex = 14;
+            // 
+            // btn_art_anlegen
+            // 
+            this.btn_art_anlegen.Location = new System.Drawing.Point(3, 388);
+            this.btn_art_anlegen.Name = "btn_art_anlegen";
+            this.btn_art_anlegen.Size = new System.Drawing.Size(362, 56);
+            this.btn_art_anlegen.TabIndex = 16;
+            this.btn_art_anlegen.Text = "Artikel anlegen";
+            this.btn_art_anlegen.UseVisualStyleBackColor = true;
+            this.btn_art_anlegen.Click += new System.EventHandler(this.btn_art_anlegen_Click);
             // 
             // button1
             // 
@@ -685,35 +681,41 @@
             this.button1.Text = "Artikel anzeigen";
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // lbl_art_bezeichnung
             // 
-            this.button2.Location = new System.Drawing.Point(3, 388);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(362, 56);
-            this.button2.TabIndex = 16;
-            this.button2.Text = "Artikel anlegen";
-            this.button2.UseVisualStyleBackColor = true;
+            this.lbl_art_bezeichnung.AutoSize = true;
+            this.lbl_art_bezeichnung.Location = new System.Drawing.Point(3, 100);
+            this.lbl_art_bezeichnung.Name = "lbl_art_bezeichnung";
+            this.lbl_art_bezeichnung.Size = new System.Drawing.Size(69, 13);
+            this.lbl_art_bezeichnung.TabIndex = 13;
+            this.lbl_art_bezeichnung.Text = "Bezeichnung";
             // 
-            // txt_art_bezeichnung
+            // lbl_art_marke
             // 
-            this.txt_art_bezeichnung.Location = new System.Drawing.Point(92, 97);
-            this.txt_art_bezeichnung.Name = "txt_art_bezeichnung";
-            this.txt_art_bezeichnung.Size = new System.Drawing.Size(264, 20);
-            this.txt_art_bezeichnung.TabIndex = 17;
+            this.lbl_art_marke.AutoSize = true;
+            this.lbl_art_marke.Location = new System.Drawing.Point(3, 74);
+            this.lbl_art_marke.Name = "lbl_art_marke";
+            this.lbl_art_marke.Size = new System.Drawing.Size(37, 13);
+            this.lbl_art_marke.TabIndex = 12;
+            this.lbl_art_marke.Text = "Marke";
             // 
-            // txt_art_marke
+            // lbl_art_kategorie
             // 
-            this.txt_art_marke.Location = new System.Drawing.Point(92, 71);
-            this.txt_art_marke.Name = "txt_art_marke";
-            this.txt_art_marke.Size = new System.Drawing.Size(264, 20);
-            this.txt_art_marke.TabIndex = 18;
+            this.lbl_art_kategorie.AutoSize = true;
+            this.lbl_art_kategorie.Location = new System.Drawing.Point(3, 48);
+            this.lbl_art_kategorie.Name = "lbl_art_kategorie";
+            this.lbl_art_kategorie.Size = new System.Drawing.Size(52, 13);
+            this.lbl_art_kategorie.TabIndex = 11;
+            this.lbl_art_kategorie.Text = "Kategorie";
             // 
-            // txt_art_kategorie
+            // lbl_art_artikelnummer
             // 
-            this.txt_art_kategorie.Location = new System.Drawing.Point(92, 45);
-            this.txt_art_kategorie.Name = "txt_art_kategorie";
-            this.txt_art_kategorie.Size = new System.Drawing.Size(264, 20);
-            this.txt_art_kategorie.TabIndex = 19;
+            this.lbl_art_artikelnummer.AutoSize = true;
+            this.lbl_art_artikelnummer.Location = new System.Drawing.Point(3, 22);
+            this.lbl_art_artikelnummer.Name = "lbl_art_artikelnummer";
+            this.lbl_art_artikelnummer.Size = new System.Drawing.Size(73, 13);
+            this.lbl_art_artikelnummer.TabIndex = 10;
+            this.lbl_art_artikelnummer.Text = "Artikelnummer";
             // 
             // tbp_Kunde
             // 
@@ -735,69 +737,14 @@
             this.tbp_Kunde.Text = "Kunden";
             this.tbp_Kunde.UseVisualStyleBackColor = true;
             // 
-            // lbl_k_kundennummer
+            // btn_e_erfassen
             // 
-            this.lbl_k_kundennummer.AutoSize = true;
-            this.lbl_k_kundennummer.Location = new System.Drawing.Point(3, 25);
-            this.lbl_k_kundennummer.Name = "lbl_k_kundennummer";
-            this.lbl_k_kundennummer.Size = new System.Drawing.Size(81, 13);
-            this.lbl_k_kundennummer.TabIndex = 16;
-            this.lbl_k_kundennummer.Text = "Kundennummer";
-            // 
-            // lbl_k_kunde
-            // 
-            this.lbl_k_kunde.AutoSize = true;
-            this.lbl_k_kunde.Location = new System.Drawing.Point(3, 51);
-            this.lbl_k_kunde.Name = "lbl_k_kunde";
-            this.lbl_k_kunde.Size = new System.Drawing.Size(38, 13);
-            this.lbl_k_kunde.TabIndex = 17;
-            this.lbl_k_kunde.Text = "Kunde";
-            // 
-            // lbl_k_land
-            // 
-            this.lbl_k_land.AutoSize = true;
-            this.lbl_k_land.Location = new System.Drawing.Point(3, 77);
-            this.lbl_k_land.Name = "lbl_k_land";
-            this.lbl_k_land.Size = new System.Drawing.Size(31, 13);
-            this.lbl_k_land.TabIndex = 18;
-            this.lbl_k_land.Text = "Land";
-            // 
-            // txt_k_kundennummer
-            // 
-            this.txt_k_kundennummer.Location = new System.Drawing.Point(109, 22);
-            this.txt_k_kundennummer.Name = "txt_k_kundennummer";
-            this.txt_k_kundennummer.Size = new System.Drawing.Size(253, 20);
-            this.txt_k_kundennummer.TabIndex = 19;
-            // 
-            // textBox23
-            // 
-            this.textBox23.Location = new System.Drawing.Point(109, 100);
-            this.textBox23.Name = "textBox23";
-            this.textBox23.Size = new System.Drawing.Size(253, 20);
-            this.textBox23.TabIndex = 21;
-            // 
-            // textBox18
-            // 
-            this.textBox18.Location = new System.Drawing.Point(109, 74);
-            this.textBox18.Name = "textBox18";
-            this.textBox18.Size = new System.Drawing.Size(253, 20);
-            this.textBox18.TabIndex = 22;
-            // 
-            // txt_k_kunde
-            // 
-            this.txt_k_kunde.Location = new System.Drawing.Point(109, 48);
-            this.txt_k_kunde.Name = "txt_k_kunde";
-            this.txt_k_kunde.Size = new System.Drawing.Size(253, 20);
-            this.txt_k_kunde.TabIndex = 23;
-            // 
-            // button6
-            // 
-            this.button6.Location = new System.Drawing.Point(3, 377);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(362, 61);
-            this.button6.TabIndex = 24;
-            this.button6.Text = "Kunde erfassen";
-            this.button6.UseVisualStyleBackColor = true;
+            this.btn_e_erfassen.Location = new System.Drawing.Point(3, 310);
+            this.btn_e_erfassen.Name = "btn_e_erfassen";
+            this.btn_e_erfassen.Size = new System.Drawing.Size(362, 61);
+            this.btn_e_erfassen.TabIndex = 12;
+            this.btn_e_erfassen.Text = "Eingang erfassen";
+            this.btn_e_erfassen.UseVisualStyleBackColor = true;
             // 
             // lbl_l_ort
             // 
@@ -808,14 +755,69 @@
             this.lbl_l_ort.TabIndex = 25;
             this.lbl_l_ort.Text = "Ort";
             // 
-            // btn_e_erfassen
+            // button6
             // 
-            this.btn_e_erfassen.Location = new System.Drawing.Point(3, 310);
-            this.btn_e_erfassen.Name = "btn_e_erfassen";
-            this.btn_e_erfassen.Size = new System.Drawing.Size(362, 61);
-            this.btn_e_erfassen.TabIndex = 12;
-            this.btn_e_erfassen.Text = "Eingang erfassen";
-            this.btn_e_erfassen.UseVisualStyleBackColor = true;
+            this.button6.Location = new System.Drawing.Point(3, 377);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(362, 61);
+            this.button6.TabIndex = 24;
+            this.button6.Text = "Kunde erfassen";
+            this.button6.UseVisualStyleBackColor = true;
+            // 
+            // txt_k_kunde
+            // 
+            this.txt_k_kunde.Location = new System.Drawing.Point(109, 48);
+            this.txt_k_kunde.Name = "txt_k_kunde";
+            this.txt_k_kunde.Size = new System.Drawing.Size(253, 20);
+            this.txt_k_kunde.TabIndex = 23;
+            // 
+            // textBox18
+            // 
+            this.textBox18.Location = new System.Drawing.Point(109, 74);
+            this.textBox18.Name = "textBox18";
+            this.textBox18.Size = new System.Drawing.Size(253, 20);
+            this.textBox18.TabIndex = 22;
+            // 
+            // textBox23
+            // 
+            this.textBox23.Location = new System.Drawing.Point(109, 100);
+            this.textBox23.Name = "textBox23";
+            this.textBox23.Size = new System.Drawing.Size(253, 20);
+            this.textBox23.TabIndex = 21;
+            // 
+            // txt_k_kundennummer
+            // 
+            this.txt_k_kundennummer.Location = new System.Drawing.Point(109, 22);
+            this.txt_k_kundennummer.Name = "txt_k_kundennummer";
+            this.txt_k_kundennummer.Size = new System.Drawing.Size(253, 20);
+            this.txt_k_kundennummer.TabIndex = 19;
+            // 
+            // lbl_k_land
+            // 
+            this.lbl_k_land.AutoSize = true;
+            this.lbl_k_land.Location = new System.Drawing.Point(3, 77);
+            this.lbl_k_land.Name = "lbl_k_land";
+            this.lbl_k_land.Size = new System.Drawing.Size(31, 13);
+            this.lbl_k_land.TabIndex = 18;
+            this.lbl_k_land.Text = "Land";
+            // 
+            // lbl_k_kunde
+            // 
+            this.lbl_k_kunde.AutoSize = true;
+            this.lbl_k_kunde.Location = new System.Drawing.Point(3, 51);
+            this.lbl_k_kunde.Name = "lbl_k_kunde";
+            this.lbl_k_kunde.Size = new System.Drawing.Size(38, 13);
+            this.lbl_k_kunde.TabIndex = 17;
+            this.lbl_k_kunde.Text = "Kunde";
+            // 
+            // lbl_k_kundennummer
+            // 
+            this.lbl_k_kundennummer.AutoSize = true;
+            this.lbl_k_kundennummer.Location = new System.Drawing.Point(3, 25);
+            this.lbl_k_kundennummer.Name = "lbl_k_kundennummer";
+            this.lbl_k_kundennummer.Size = new System.Drawing.Size(81, 13);
+            this.lbl_k_kundennummer.TabIndex = 16;
+            this.lbl_k_kundennummer.Text = "Kundennummer";
             // 
             // tbp_Lieferant
             // 
@@ -840,86 +842,14 @@
             this.tbp_Lieferant.UseVisualStyleBackColor = true;
             this.tbp_Lieferant.Click += new System.EventHandler(this.tbp_Artikel_Click);
             // 
-            // lbl_lief_lieferantennummer
+            // button7
             // 
-            this.lbl_lief_lieferantennummer.AutoSize = true;
-            this.lbl_lief_lieferantennummer.Location = new System.Drawing.Point(3, 33);
-            this.lbl_lief_lieferantennummer.Name = "lbl_lief_lieferantennummer";
-            this.lbl_lief_lieferantennummer.Size = new System.Drawing.Size(97, 13);
-            this.lbl_lief_lieferantennummer.TabIndex = 19;
-            this.lbl_lief_lieferantennummer.Text = "Lieferantennummer";
-            // 
-            // lbl_lief_lieferant
-            // 
-            this.lbl_lief_lieferant.AutoSize = true;
-            this.lbl_lief_lieferant.Location = new System.Drawing.Point(3, 59);
-            this.lbl_lief_lieferant.Name = "lbl_lief_lieferant";
-            this.lbl_lief_lieferant.Size = new System.Drawing.Size(48, 13);
-            this.lbl_lief_lieferant.TabIndex = 20;
-            this.lbl_lief_lieferant.Text = "Lieferant";
-            // 
-            // lbl_lief_land
-            // 
-            this.lbl_lief_land.AutoSize = true;
-            this.lbl_lief_land.Location = new System.Drawing.Point(3, 85);
-            this.lbl_lief_land.Name = "lbl_lief_land";
-            this.lbl_lief_land.Size = new System.Drawing.Size(31, 13);
-            this.lbl_lief_land.TabIndex = 21;
-            this.lbl_lief_land.Text = "Land";
-            // 
-            // lbl_lief_ort
-            // 
-            this.lbl_lief_ort.AutoSize = true;
-            this.lbl_lief_ort.Location = new System.Drawing.Point(3, 111);
-            this.lbl_lief_ort.Name = "lbl_lief_ort";
-            this.lbl_lief_ort.Size = new System.Drawing.Size(21, 13);
-            this.lbl_lief_ort.TabIndex = 22;
-            this.lbl_lief_ort.Text = "Ort";
-            // 
-            // lbl_lief_anmerkung
-            // 
-            this.lbl_lief_anmerkung.AutoSize = true;
-            this.lbl_lief_anmerkung.Location = new System.Drawing.Point(3, 147);
-            this.lbl_lief_anmerkung.Name = "lbl_lief_anmerkung";
-            this.lbl_lief_anmerkung.Size = new System.Drawing.Size(61, 13);
-            this.lbl_lief_anmerkung.TabIndex = 23;
-            this.lbl_lief_anmerkung.Text = "Anmerkung";
-            // 
-            // txt_lief_lieferantennummer
-            // 
-            this.txt_lief_lieferantennummer.Location = new System.Drawing.Point(116, 30);
-            this.txt_lief_lieferantennummer.Name = "txt_lief_lieferantennummer";
-            this.txt_lief_lieferantennummer.Size = new System.Drawing.Size(243, 20);
-            this.txt_lief_lieferantennummer.TabIndex = 24;
-            // 
-            // txt_lief_ort
-            // 
-            this.txt_lief_ort.Location = new System.Drawing.Point(116, 108);
-            this.txt_lief_ort.Name = "txt_lief_ort";
-            this.txt_lief_ort.Size = new System.Drawing.Size(243, 20);
-            this.txt_lief_ort.TabIndex = 25;
-            // 
-            // txt_lief_land
-            // 
-            this.txt_lief_land.Location = new System.Drawing.Point(116, 82);
-            this.txt_lief_land.Name = "txt_lief_land";
-            this.txt_lief_land.Size = new System.Drawing.Size(243, 20);
-            this.txt_lief_land.TabIndex = 26;
-            // 
-            // txt_lief_lieferant
-            // 
-            this.txt_lief_lieferant.Location = new System.Drawing.Point(116, 56);
-            this.txt_lief_lieferant.Name = "txt_lief_lieferant";
-            this.txt_lief_lieferant.Size = new System.Drawing.Size(243, 20);
-            this.txt_lief_lieferant.TabIndex = 27;
-            // 
-            // rtxt_lief_anmerkung
-            // 
-            this.rtxt_lief_anmerkung.Location = new System.Drawing.Point(116, 134);
-            this.rtxt_lief_anmerkung.Name = "rtxt_lief_anmerkung";
-            this.rtxt_lief_anmerkung.Size = new System.Drawing.Size(246, 186);
-            this.rtxt_lief_anmerkung.TabIndex = 28;
-            this.rtxt_lief_anmerkung.Text = "";
+            this.button7.Location = new System.Drawing.Point(3, 326);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(359, 56);
+            this.button7.TabIndex = 30;
+            this.button7.Text = "Lieferanten erfassen";
+            this.button7.UseVisualStyleBackColor = true;
             // 
             // button5
             // 
@@ -930,14 +860,86 @@
             this.button5.Text = "Lieferanten anzeigen";
             this.button5.UseVisualStyleBackColor = true;
             // 
-            // button7
+            // rtxt_lief_anmerkung
             // 
-            this.button7.Location = new System.Drawing.Point(3, 326);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(359, 56);
-            this.button7.TabIndex = 30;
-            this.button7.Text = "Lieferanten erfassen";
-            this.button7.UseVisualStyleBackColor = true;
+            this.rtxt_lief_anmerkung.Location = new System.Drawing.Point(116, 134);
+            this.rtxt_lief_anmerkung.Name = "rtxt_lief_anmerkung";
+            this.rtxt_lief_anmerkung.Size = new System.Drawing.Size(246, 186);
+            this.rtxt_lief_anmerkung.TabIndex = 28;
+            this.rtxt_lief_anmerkung.Text = "";
+            // 
+            // txt_lief_lieferant
+            // 
+            this.txt_lief_lieferant.Location = new System.Drawing.Point(116, 56);
+            this.txt_lief_lieferant.Name = "txt_lief_lieferant";
+            this.txt_lief_lieferant.Size = new System.Drawing.Size(243, 20);
+            this.txt_lief_lieferant.TabIndex = 27;
+            // 
+            // txt_lief_land
+            // 
+            this.txt_lief_land.Location = new System.Drawing.Point(116, 82);
+            this.txt_lief_land.Name = "txt_lief_land";
+            this.txt_lief_land.Size = new System.Drawing.Size(243, 20);
+            this.txt_lief_land.TabIndex = 26;
+            // 
+            // txt_lief_ort
+            // 
+            this.txt_lief_ort.Location = new System.Drawing.Point(116, 108);
+            this.txt_lief_ort.Name = "txt_lief_ort";
+            this.txt_lief_ort.Size = new System.Drawing.Size(243, 20);
+            this.txt_lief_ort.TabIndex = 25;
+            // 
+            // txt_lief_lieferantennummer
+            // 
+            this.txt_lief_lieferantennummer.Location = new System.Drawing.Point(116, 30);
+            this.txt_lief_lieferantennummer.Name = "txt_lief_lieferantennummer";
+            this.txt_lief_lieferantennummer.Size = new System.Drawing.Size(243, 20);
+            this.txt_lief_lieferantennummer.TabIndex = 24;
+            // 
+            // lbl_lief_anmerkung
+            // 
+            this.lbl_lief_anmerkung.AutoSize = true;
+            this.lbl_lief_anmerkung.Location = new System.Drawing.Point(3, 147);
+            this.lbl_lief_anmerkung.Name = "lbl_lief_anmerkung";
+            this.lbl_lief_anmerkung.Size = new System.Drawing.Size(61, 13);
+            this.lbl_lief_anmerkung.TabIndex = 23;
+            this.lbl_lief_anmerkung.Text = "Anmerkung";
+            // 
+            // lbl_lief_ort
+            // 
+            this.lbl_lief_ort.AutoSize = true;
+            this.lbl_lief_ort.Location = new System.Drawing.Point(3, 111);
+            this.lbl_lief_ort.Name = "lbl_lief_ort";
+            this.lbl_lief_ort.Size = new System.Drawing.Size(21, 13);
+            this.lbl_lief_ort.TabIndex = 22;
+            this.lbl_lief_ort.Text = "Ort";
+            // 
+            // lbl_lief_land
+            // 
+            this.lbl_lief_land.AutoSize = true;
+            this.lbl_lief_land.Location = new System.Drawing.Point(3, 85);
+            this.lbl_lief_land.Name = "lbl_lief_land";
+            this.lbl_lief_land.Size = new System.Drawing.Size(31, 13);
+            this.lbl_lief_land.TabIndex = 21;
+            this.lbl_lief_land.Text = "Land";
+            // 
+            // lbl_lief_lieferant
+            // 
+            this.lbl_lief_lieferant.AutoSize = true;
+            this.lbl_lief_lieferant.Location = new System.Drawing.Point(3, 59);
+            this.lbl_lief_lieferant.Name = "lbl_lief_lieferant";
+            this.lbl_lief_lieferant.Size = new System.Drawing.Size(48, 13);
+            this.lbl_lief_lieferant.TabIndex = 20;
+            this.lbl_lief_lieferant.Text = "Lieferant";
+            // 
+            // lbl_lief_lieferantennummer
+            // 
+            this.lbl_lief_lieferantennummer.AutoSize = true;
+            this.lbl_lief_lieferantennummer.Location = new System.Drawing.Point(3, 33);
+            this.lbl_lief_lieferantennummer.Name = "lbl_lief_lieferantennummer";
+            this.lbl_lief_lieferantennummer.Size = new System.Drawing.Size(97, 13);
+            this.lbl_lief_lieferantennummer.TabIndex = 19;
+            this.lbl_lief_lieferantennummer.Text = "Lieferantennummer";
             // 
             // tbc_Daten
             // 
@@ -1045,7 +1047,7 @@
         private System.Windows.Forms.TextBox txt_art_marke;
         private System.Windows.Forms.TextBox txt_art_bezeichnung;
         private System.Windows.Forms.TextBox txt_art_artikelnummer;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btn_art_anlegen;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label lbl_art_bezeichnung;
         private System.Windows.Forms.Label lbl_art_marke;

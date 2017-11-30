@@ -52,6 +52,12 @@
     <Compile Include="Anmeldung.Designer.cs">
       <DependentUpon>Anmeldung.cs</DependentUpon>
     </Compile>
+    <Compile Include="art_anlegen_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="art_anlegen_form.Designer.cs">
+      <DependentUpon>art_anlegen_form.cs</DependentUpon>
+    </Compile>
     <Compile Include="Ausgangsjournal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -101,6 +107,9 @@
     </Compile>
     <EmbeddedResource Include="Anmeldung.resx">
       <DependentUpon>Anmeldung.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="art_anlegen_form.resx">
+      <DependentUpon>art_anlegen_form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Benutzer_Bearbeiten.resx">
       <DependentUpon>Benutzer_Bearbeiten.cs</DependentUpon>
