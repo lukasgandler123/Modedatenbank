@@ -33,6 +33,7 @@ namespace Lagerverwaltung___Mode
             string benutzername = txt_Benutzername.Text.ToString();
             string passwort = txt_Passwort.Text.ToString();
             bool anmeldungErfolgreich = false;
+            
 
             MySqlCommand selectPW = new MySqlCommand("SELECT passwort FROM t_benutzer WHERE benutzername = '" + benutzername + "';", con);
             

@@ -141,7 +141,7 @@ namespace Lagerverwaltung___Mode
         {
 
             // Passwort zurücksetzen
-            if (e.ColumnIndex == 8 && e.RowIndex > 0)
+            if (e.ColumnIndex == 8 && e.RowIndex >= 0)
             {
                 DataGridViewRow row = dgv_Benutzer.Rows[e.RowIndex];
                 PasswortReseten pr = new PasswortReseten(Convert.ToInt32(row.Cells[0].Value));
@@ -149,7 +149,7 @@ namespace Lagerverwaltung___Mode
             }
 
             // Löschen
-            if(e.ColumnIndex == 9 && e.RowIndex > 0)
+            if(e.ColumnIndex == 9 && e.RowIndex >= 0)
             {
                 DataGridViewRow row = dgv_Benutzer.Rows[e.RowIndex];
                 //DataGridViewRow row = dgv_Benutzer.Rows[e.RowIndex];
