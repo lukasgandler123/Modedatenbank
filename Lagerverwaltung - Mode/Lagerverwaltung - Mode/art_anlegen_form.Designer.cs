@@ -103,6 +103,9 @@
             // art_anlegen_kategorie
             // 
             this.art_anlegen_kategorie.FormattingEnabled = true;
+            this.art_anlegen_kategorie.Items.AddRange(new object[] {
+            "",
+            ""});
             this.art_anlegen_kategorie.Location = new System.Drawing.Point(142, 30);
             this.art_anlegen_kategorie.Name = "art_anlegen_kategorie";
             this.art_anlegen_kategorie.Size = new System.Drawing.Size(213, 21);
