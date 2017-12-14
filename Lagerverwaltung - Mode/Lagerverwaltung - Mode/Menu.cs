@@ -88,9 +88,12 @@ namespace Lagerverwaltung___Mode
             DataGridViewRow row = dgv_Artikel.Rows[e.RowIndex];
             DataGridViewColumn column = dgv_Artikel.Columns[e.ColumnIndex];
 
-            if(column.Index == 5)
-            {
+            //MessageBox.Show(column.Index.ToString());
 
+            if(column.Index == 0 && e.RowIndex >= 0)
+            {
+                Artikel_Bearbeiten ab = new Artikel_Bearbeiten(row.Cells[2].Value.ToString(), row.Cells[3].Value.ToString(), row.Cells[4].Value.ToString());
+                ab.ShowDialog();
             }
         }
     }

@@ -31,7 +31,16 @@ namespace Lagerverwaltung___Mode
 
         private void btn_Speichern_Click(object sender, EventArgs e)
         {
+            MySqlCommand update = new MySqlCommand();
 
+            try
+            {
+
+            }
+            catch(MySqlException ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
         }
 
         private void Artikel_Bearbeiten_Load(object sender, EventArgs e)
