@@ -91,6 +91,10 @@ namespace Lagerverwaltung___Mode
                     MessageBox.Show(ex.ToString());
                 }
             }
+            catch
+            {
+
+            }
         }
     }
 }
