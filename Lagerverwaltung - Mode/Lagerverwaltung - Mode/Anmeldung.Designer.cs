@@ -75,9 +75,9 @@
             // 
             this.txt_Passwort.Location = new System.Drawing.Point(93, 45);
             this.txt_Passwort.Name = "txt_Passwort";
-            this.txt_Passwort.PasswordChar = '*';
             this.txt_Passwort.Size = new System.Drawing.Size(247, 20);
             this.txt_Passwort.TabIndex = 2;
+            this.txt_Passwort.UseSystemPasswordChar = true;
             // 
             // btn_Anmelden
             // 

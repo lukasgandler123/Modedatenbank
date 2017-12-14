@@ -58,17 +58,17 @@
             // 
             this.txt_Passwort.Location = new System.Drawing.Point(143, 6);
             this.txt_Passwort.Name = "txt_Passwort";
-            this.txt_Passwort.PasswordChar = '*';
             this.txt_Passwort.Size = new System.Drawing.Size(203, 20);
             this.txt_Passwort.TabIndex = 2;
+            this.txt_Passwort.UseSystemPasswordChar = true;
             // 
             // txt_PasswortBestaetigen
             // 
             this.txt_PasswortBestaetigen.Location = new System.Drawing.Point(143, 32);
             this.txt_PasswortBestaetigen.Name = "txt_PasswortBestaetigen";
-            this.txt_PasswortBestaetigen.PasswordChar = '*';
             this.txt_PasswortBestaetigen.Size = new System.Drawing.Size(203, 20);
             this.txt_PasswortBestaetigen.TabIndex = 3;
+            this.txt_PasswortBestaetigen.UseSystemPasswordChar = true;
             // 
             // btn_Speichern
             // 
