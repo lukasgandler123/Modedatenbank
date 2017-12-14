@@ -52,6 +52,12 @@
     <Compile Include="Anmeldung.Designer.cs">
       <DependentUpon>Anmeldung.cs</DependentUpon>
     </Compile>
+    <Compile Include="Artikel_Bearbeiten.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Artikel_Bearbeiten.Designer.cs">
+      <DependentUpon>Artikel_Bearbeiten.cs</DependentUpon>
+    </Compile>
     <Compile Include="art_anlegen_form.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -105,8 +111,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>team07DataSet_Benutzer.xsd</DependentUpon>
     </Compile>
+    <Compile Include="t_Artikel_DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>t_Artikel_DataSet1.xsd</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Anmeldung.resx">
       <DependentUpon>Anmeldung.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Artikel_Bearbeiten.resx">
+      <DependentUpon>Artikel_Bearbeiten.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="art_anlegen_form.resx">
       <DependentUpon>art_anlegen_form.cs</DependentUpon>
@@ -154,6 +168,17 @@
     </None>
     <None Include="team07DataSet_Benutzer.xss">
       <DependentUpon>team07DataSet_Benutzer.xsd</DependentUpon>
+    </None>
+    <None Include="t_Artikel_DataSet1.xsc">
+      <DependentUpon>t_Artikel_DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="t_Artikel_DataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>t_Artikel_DataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="t_Artikel_DataSet1.xss">
+      <DependentUpon>t_Artikel_DataSet1.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>

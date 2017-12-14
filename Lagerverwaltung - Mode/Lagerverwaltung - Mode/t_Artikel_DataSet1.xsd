@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="t_Artikel_DataSet" targetNamespace="http://tempuri.org/t_Artikel_DataSet1.xsd" xmlns:mstns="http://tempuri.org/t_Artikel_DataSet1.xsd" xmlns="http://tempuri.org/t_Artikel_DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="team07ConnectionString_Benutzer" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="team07ConnectionString_Benutzer (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Lagerverwaltung___Mode.Properties.Settings.GlobalReference.Default.team07ConnectionString_Benutzer" Provider="MySql.Data.MySqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="t_artikelTableAdapter" GeneratorDataComponentClassName="t_artikelTableAdapter" Name="t_artikel" UserDataComponentName="t_artikelTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="team07ConnectionString_Benutzer (Settings)" DbObjectName="team07.t_artikel" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `artikelid`, `kategorie`, `marke`, `bezeichnung`, `archiviert` FROM `t_artikel`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="t_Artikel_DataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="t_Artikel_DataSet" msprop:Generator_UserDSName="t_Artikel_DataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="t_artikel" msprop:Generator_TableClassName="t_artikelDataTable" msprop:Generator_TableVarName="tablet_artikel" msprop:Generator_TablePropName="t_artikel" msprop:Generator_RowDeletingName="t_artikelRowDeleting" msprop:Generator_RowChangingName="t_artikelRowChanging" msprop:Generator_RowEvHandlerName="t_artikelRowChangeEventHandler" msprop:Generator_RowDeletedName="t_artikelRowDeleted" msprop:Generator_UserTableName="t_artikel" msprop:Generator_RowChangedName="t_artikelRowChanged" msprop:Generator_RowEvArgName="t_artikelRowChangeEvent" msprop:Generator_RowClassName="t_artikelRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

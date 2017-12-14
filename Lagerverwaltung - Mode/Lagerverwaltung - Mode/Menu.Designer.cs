@@ -89,7 +89,6 @@
             this.txt_art_bezeichnung = new System.Windows.Forms.TextBox();
             this.txt_art_artikelnummer = new System.Windows.Forms.TextBox();
             this.btn_art_anlegen = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.lbl_art_bezeichnung = new System.Windows.Forms.Label();
             this.lbl_art_marke = new System.Windows.Forms.Label();
             this.lbl_art_kategorie = new System.Windows.Forms.Label();
@@ -119,6 +118,11 @@
             this.lbl_lief_lieferant = new System.Windows.Forms.Label();
             this.lbl_lief_lieferantennummer = new System.Windows.Forms.Label();
             this.tbc_Daten = new System.Windows.Forms.TabControl();
+            this.dgv_Artikel = new System.Windows.Forms.DataGridView();
+            this.t_Artikel_DataSet = new Lagerverwaltung___Mode.t_Artikel_DataSet();
+            this.tartikelBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.t_artikelTableAdapter = new Lagerverwaltung___Mode.t_Artikel_DataSetTableAdapters.t_artikelTableAdapter();
+            this.tartikelBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.menuStrip1.SuspendLayout();
             this.tbp_eingang.SuspendLayout();
             this.gpx_eingan.SuspendLayout();
@@ -131,6 +135,10 @@
             this.tbp_Kunde.SuspendLayout();
             this.tbp_Lieferant.SuspendLayout();
             this.tbc_Daten.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_Artikel)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.t_Artikel_DataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tartikelBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tartikelBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // contextMenuStrip1
@@ -617,12 +625,12 @@
             // 
             // tbp_Artikel
             // 
+            this.tbp_Artikel.Controls.Add(this.dgv_Artikel);
             this.tbp_Artikel.Controls.Add(this.txt_art_kategorie);
             this.tbp_Artikel.Controls.Add(this.txt_art_marke);
             this.tbp_Artikel.Controls.Add(this.txt_art_bezeichnung);
             this.tbp_Artikel.Controls.Add(this.txt_art_artikelnummer);
             this.tbp_Artikel.Controls.Add(this.btn_art_anlegen);
-            this.tbp_Artikel.Controls.Add(this.button1);
             this.tbp_Artikel.Controls.Add(this.lbl_art_bezeichnung);
             this.tbp_Artikel.Controls.Add(this.lbl_art_marke);
             this.tbp_Artikel.Controls.Add(this.lbl_art_kategorie);
@@ -664,27 +672,18 @@
             // 
             // btn_art_anlegen
             // 
-            this.btn_art_anlegen.Location = new System.Drawing.Point(3, 388);
+            this.btn_art_anlegen.Location = new System.Drawing.Point(16, 388);
             this.btn_art_anlegen.Name = "btn_art_anlegen";
-            this.btn_art_anlegen.Size = new System.Drawing.Size(362, 56);
+            this.btn_art_anlegen.Size = new System.Drawing.Size(340, 56);
             this.btn_art_anlegen.TabIndex = 16;
             this.btn_art_anlegen.Text = "Artikel anlegen";
             this.btn_art_anlegen.UseVisualStyleBackColor = true;
             this.btn_art_anlegen.Click += new System.EventHandler(this.btn_art_anlegen_Click);
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(3, 326);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(362, 56);
-            this.button1.TabIndex = 15;
-            this.button1.Text = "Artikel anzeigen";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
             // lbl_art_bezeichnung
             // 
             this.lbl_art_bezeichnung.AutoSize = true;
-            this.lbl_art_bezeichnung.Location = new System.Drawing.Point(3, 100);
+            this.lbl_art_bezeichnung.Location = new System.Drawing.Point(17, 100);
             this.lbl_art_bezeichnung.Name = "lbl_art_bezeichnung";
             this.lbl_art_bezeichnung.Size = new System.Drawing.Size(69, 13);
             this.lbl_art_bezeichnung.TabIndex = 13;
@@ -693,7 +692,7 @@
             // lbl_art_marke
             // 
             this.lbl_art_marke.AutoSize = true;
-            this.lbl_art_marke.Location = new System.Drawing.Point(3, 74);
+            this.lbl_art_marke.Location = new System.Drawing.Point(49, 74);
             this.lbl_art_marke.Name = "lbl_art_marke";
             this.lbl_art_marke.Size = new System.Drawing.Size(37, 13);
             this.lbl_art_marke.TabIndex = 12;
@@ -702,7 +701,7 @@
             // lbl_art_kategorie
             // 
             this.lbl_art_kategorie.AutoSize = true;
-            this.lbl_art_kategorie.Location = new System.Drawing.Point(3, 48);
+            this.lbl_art_kategorie.Location = new System.Drawing.Point(34, 48);
             this.lbl_art_kategorie.Name = "lbl_art_kategorie";
             this.lbl_art_kategorie.Size = new System.Drawing.Size(52, 13);
             this.lbl_art_kategorie.TabIndex = 11;
@@ -711,7 +710,7 @@
             // lbl_art_artikelnummer
             // 
             this.lbl_art_artikelnummer.AutoSize = true;
-            this.lbl_art_artikelnummer.Location = new System.Drawing.Point(3, 22);
+            this.lbl_art_artikelnummer.Location = new System.Drawing.Point(13, 22);
             this.lbl_art_artikelnummer.Name = "lbl_art_artikelnummer";
             this.lbl_art_artikelnummer.Size = new System.Drawing.Size(73, 13);
             this.lbl_art_artikelnummer.TabIndex = 10;
@@ -952,6 +951,37 @@
             this.tbc_Daten.Size = new System.Drawing.Size(376, 476);
             this.tbc_Daten.TabIndex = 3;
             // 
+            // dgv_Artikel
+            // 
+            this.dgv_Artikel.AllowUserToAddRows = false;
+            this.dgv_Artikel.AllowUserToDeleteRows = false;
+            this.dgv_Artikel.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_Artikel.Location = new System.Drawing.Point(16, 123);
+            this.dgv_Artikel.Name = "dgv_Artikel";
+            this.dgv_Artikel.ReadOnly = true;
+            this.dgv_Artikel.Size = new System.Drawing.Size(340, 259);
+            this.dgv_Artikel.TabIndex = 4;
+            this.dgv_Artikel.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Artikel_CellClick);
+            // 
+            // t_Artikel_DataSet
+            // 
+            this.t_Artikel_DataSet.DataSetName = "t_Artikel_DataSet";
+            this.t_Artikel_DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // tartikelBindingSource
+            // 
+            this.tartikelBindingSource.DataMember = "t_artikel";
+            this.tartikelBindingSource.DataSource = this.t_Artikel_DataSet;
+            // 
+            // t_artikelTableAdapter
+            // 
+            this.t_artikelTableAdapter.ClearBeforeFill = true;
+            // 
+            // tartikelBindingSource1
+            // 
+            this.tartikelBindingSource1.DataMember = "t_artikel";
+            this.tartikelBindingSource1.DataSource = this.t_Artikel_DataSet;
+            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -963,6 +993,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Menu";
             this.Text = "Menu";
+            this.Load += new System.EventHandler(this.Menu_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.tbp_eingang.ResumeLayout(false);
@@ -982,6 +1013,10 @@
             this.tbp_Lieferant.ResumeLayout(false);
             this.tbp_Lieferant.PerformLayout();
             this.tbc_Daten.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_Artikel)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.t_Artikel_DataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tartikelBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tartikelBindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1048,7 +1083,6 @@
         private System.Windows.Forms.TextBox txt_art_bezeichnung;
         private System.Windows.Forms.TextBox txt_art_artikelnummer;
         private System.Windows.Forms.Button btn_art_anlegen;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label lbl_art_bezeichnung;
         private System.Windows.Forms.Label lbl_art_marke;
         private System.Windows.Forms.Label lbl_art_kategorie;
@@ -1078,5 +1112,10 @@
         private System.Windows.Forms.Label lbl_lief_lieferant;
         private System.Windows.Forms.Label lbl_lief_lieferantennummer;
         private System.Windows.Forms.TabControl tbc_Daten;
+        private System.Windows.Forms.DataGridView dgv_Artikel;
+        private t_Artikel_DataSet t_Artikel_DataSet;
+        private System.Windows.Forms.BindingSource tartikelBindingSource;
+        private t_Artikel_DataSetTableAdapters.t_artikelTableAdapter t_artikelTableAdapter;
+        private System.Windows.Forms.BindingSource tartikelBindingSource1;
     }
 }

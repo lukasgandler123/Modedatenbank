@@ -68,5 +68,30 @@ namespace Lagerverwaltung___Mode
             frm.Show();
 
         }
+
+        private void Menu_Load(object sender, EventArgs e)
+        {
+            // Artikel
+            dgv_Artikel.DataSource = t_artikelTableAdapter.GetData();
+            dgv_Artikel.Columns[4].Visible = false;
+
+            // Artikel bearbeiten
+            DataGridViewButtonColumn button_loeschen = new DataGridViewButtonColumn();
+            button_loeschen.Text = "Artikel bearbeiten";
+            button_loeschen.HeaderText = "Bearbeiten";
+            button_loeschen.UseColumnTextForButtonValue = true;
+            dgv_Artikel.Columns.Insert(5, button_loeschen);
+        }
+
+        private void dgv_Artikel_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            DataGridViewRow row = dgv_Artikel.Rows[e.RowIndex];
+            DataGridViewColumn column = dgv_Artikel.Columns[e.ColumnIndex];
+
+            if(column.Index == 5)
+            {
+
+            }
+        }
     }
 }

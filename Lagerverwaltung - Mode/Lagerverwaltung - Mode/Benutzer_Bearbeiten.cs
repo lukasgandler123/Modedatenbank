@@ -44,7 +44,7 @@ namespace Lagerverwaltung___Mode
             button_loeschen.Text = "Benutzer löschen";
             button_loeschen.HeaderText = "Löschen";
             button_loeschen.UseColumnTextForButtonValue = true;
-            dgv_Benutzer.Columns.Insert(9, button_loeschen);
+            dgv_Benutzer.Columns.Insert(6, button_loeschen);
         }
         
         private void dgv_Benutzer_Bearbeiten(object sender, DataGridViewCellEventArgs e)
