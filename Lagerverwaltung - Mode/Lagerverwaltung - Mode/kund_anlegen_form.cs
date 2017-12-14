@@ -9,40 +9,40 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
 
+
 namespace Lagerverwaltung___Mode
 {
-    public partial class art_anlegen_form : Form
+    public partial class kund_anlegen_form : Form
     {
+
         MySqlConnection con = new MySqlConnection("server = eduweb.kb.local; user id = team07; password = T3amO7; database = team07");
 
-        public art_anlegen_form()
+        public kund_anlegen_form()
         {
             InitializeComponent();
         }
 
-        private void art_anlegen_artnr_TextChanged(object sender, EventArgs e)
+        private void btn_kund_erfassen_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void btn_anlegen_Click(object sender, EventArgs e)
-        {
-
-            if (art_anlegen_kategorie.Text.Length > 50)
+            if (kund_anlegen_kunde.Text.Length > 50)
             {
                 MessageBox.Show("Bitte geben Sie nicht mehr als 50 Zeichen ein");
             }
-            if (art_anlegen_marke.Text.Length > 50)
+            if (kund_anlegen_land.Text.Length > 50)
             {
                 MessageBox.Show("Bitte geben Sie nicht mehr als 50 Zeichen ein");
             }
-            if (art_anlegen_bezeichnung.Text.Length > 50)
+            if (kund_anlegen_ort.Text.Length > 50)
+            {
+                MessageBox.Show("Bitte geben Sie nicht mehr als 50 Zeichen ein");
+            }
+            if (kund_anlegen_anschrift.Text.Length > 50)
             {
                 MessageBox.Show("Bitte geben Sie nicht mehr als 50 Zeichen ein");
             }
 
-            MySqlCommand insert = new MySqlCommand("INSERT INTO t_artikel (kategorie, marke, bezeichnung, archiviert)" +
-                                "VALUES ('" + art_anlegen_kategorie.Text.ToString() + "', '" + art_anlegen_marke.Text.ToString() + "', '" + art_anlegen_bezeichnung.Text.ToString() + "', 0)", con);
+            MySqlCommand insert = new MySqlCommand("INSERT INTO t_kunden (kunde, land, ort, anschrift, archiviert)" +
+                                "VALUES ('" + kund_anlegen_kunde.Text.ToString() + "', '" + kund_anlegen_land.Text.ToString() + "', '" + kund_anlegen_ort.Text.ToString() + "' + '" + kund_anlegen_anschrift.Text.ToString() + "', 0)", con);
 
             try
             {
@@ -53,7 +53,7 @@ namespace Lagerverwaltung___Mode
                 MessageBox.Show("Artikel wurde erfolgreich angelegt!");
 
                 // Inhalte der Eingabefelder löschen
-                art_anlegen_kategorie.Text = "";
+                kund_anlegen_kunde.Text = "";
                 foreach (Control c in Controls)
                 {
                     try
@@ -80,9 +80,9 @@ namespace Lagerverwaltung___Mode
                     MySqlDataReader reader = select.ExecuteReader();
                     while (reader.Read())
                     {
-                        if (!art_anlegen_kategorie.Items.Contains(reader[0].ToString()))
+                        if (!kund_anlegen_kunde.Items.Contains(reader[0].ToString()))
                         {
-                            art_anlegen_kategorie.Items.Add(reader[0].ToString());
+                            kund_anlegen_kunde.Items.Add(reader[0].ToString());
                         }
                     }
                     con.Close();
@@ -98,7 +98,5 @@ namespace Lagerverwaltung___Mode
             }
         }
     }
+    }
 }
-
-
-
