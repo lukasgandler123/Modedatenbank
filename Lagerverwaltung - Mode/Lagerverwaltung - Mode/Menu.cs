@@ -124,22 +124,11 @@ namespace Lagerverwaltung___Mode
                 }
 
                 // Daten einfügen
-                MySqlCommand select = new MySqlCommand("SELECT artikelid, kategorie, marke, bezeichnung FROM t_artikel WHERE " +
-                    "artikelid = " + Convert.ToInt32(txt_art_artikelnummer.Text) + " OR " +
-                    "kategorie = '" + txt_art_kategorie.Text.ToString() + "' OR " +
-                    "marke = '" + txt_art_marke.Text.ToString() + "' OR " +
-                    "bezeichnung = '" + txt_art_bezeichnung.Text.ToString() + "'", con);
+                int rows = dgv_Artikel.RowCount;
 
-                try
+                for(int i = 0; i < dgv_Artikel.RowCount; i++)
                 {
-                    con.Open();
-                    MySqlDataReader reader = select.ExecuteReader();
-
-                    con.Close();
-                }
-                catch (MySqlException ex)
-                {
-                    MessageBox.Show(ex.ToString());
+                    //if(dgv_Artikel.Rows[i].)
                 }
             }
         }
