@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace Lagerverwaltung___Mode
 {
@@ -16,6 +17,8 @@ namespace Lagerverwaltung___Mode
         {
             InitializeComponent();
         }
+
+        MySqlConnection con = new MySqlConnection("server = eduweb.kb.local; user id = team07; password = T3amO7; database = team07");
 
         private void abmeldenToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -71,9 +74,7 @@ namespace Lagerverwaltung___Mode
 
         private void Menu_Load(object sender, EventArgs e)
         {
-            // Artikel
-            dgv_Artikel.DataSource = t_artikelTableAdapter.GetData();
-            dgv_Artikel.Columns[4].Visible = false;
+            ArtikelDataSet();
 
             // Artikel bearbeiten
             DataGridViewButtonColumn button_loeschen = new DataGridViewButtonColumn();
@@ -92,9 +93,61 @@ namespace Lagerverwaltung___Mode
 
             if(column.Index == 0 && e.RowIndex >= 0)
             {
-                Artikel_Bearbeiten ab = new Artikel_Bearbeiten(row.Cells[2].Value.ToString(), row.Cells[3].Value.ToString(), row.Cells[4].Value.ToString());
+                Artikel_Bearbeiten ab = new Artikel_Bearbeiten(row.Cells[2].Value.ToString(), row.Cells[3].Value.ToString(), row.Cells[4].Value.ToString(), Convert.ToInt32(row.Cells[1].Value));
                 ab.ShowDialog();
+
+                ArtikelDataSet();
             }
+        }
+
+        private void ArtikelDataSet()
+        {
+            // Artikel
+            dgv_Artikel.DataSource = t_artikelTableAdapter.GetData();
+            dgv_Artikel.Columns[4].Visible = false;
+        }
+
+        private void btn_Filtern_Click(object sender, EventArgs e)
+        {
+            if(txt_art_artikelnummer.Text.Equals("") && txt_art_bezeichnung.Text.Equals("") && txt_art_kategorie.Text.Equals("") && txt_art_marke.Text.Equals(""))
+            {
+                ArtikelDataSet();
+            }
+            else
+            {
+                // Datagrid clearen
+                int rowCount = dgv_Artikel.RowCount;
+
+                for(int i = 0; i < rowCount; i++)
+                {
+                    dgv_Artikel.Rows.RemoveAt(0);
+                }
+
+                // Daten einfügen
+                MySqlCommand select = new MySqlCommand("SELECT artikelid, kategorie, marke, bezeichnung FROM t_artikel WHERE " +
+                    "artikelid = " + Convert.ToInt32(txt_art_artikelnummer.Text) + " OR " +
+                    "kategorie = '" + txt_art_kategorie.Text.ToString() + "' OR " +
+                    "marke = '" + txt_art_marke.Text.ToString() + "' OR " +
+                    "bezeichnung = '" + txt_art_bezeichnung.Text.ToString() + "'", con);
+
+                try
+                {
+                    con.Open();
+                    MySqlDataReader reader = select.ExecuteReader();
+
+                    con.Close();
+                }
+                catch (MySqlException ex)
+                {
+                    MessageBox.Show(ex.ToString());
+                }
+            }
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            kund_anlegen_form kund = new kund_anlegen_form();
+            kund.ShowDialog();
         }
     }
 }

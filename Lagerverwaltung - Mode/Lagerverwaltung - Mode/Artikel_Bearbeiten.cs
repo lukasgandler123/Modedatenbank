@@ -15,14 +15,17 @@ namespace Lagerverwaltung___Mode
     {
         MySqlConnection con = new MySqlConnection("server = eduweb.kb.local; user id = team07; password = T3amO7; database = team07");
 
-        public Artikel_Bearbeiten(string kategorie, string marke, string bezeichnung)
+        public Artikel_Bearbeiten(string kategorie, string marke, string bezeichnung, int artikelnummer)
         {
             InitializeComponent();
 
             txt_Bezeichnung.Text = bezeichnung;
             txt_Marke.Text = marke;
             cmb_Kategorie.Text = kategorie;
+            artikelID = artikelnummer;
         }
+
+        int artikelID;
 
         private void btn_Abbrechen_Click(object sender, EventArgs e)
         {
@@ -31,11 +34,18 @@ namespace Lagerverwaltung___Mode
 
         private void btn_Speichern_Click(object sender, EventArgs e)
         {
-            MySqlCommand update = new MySqlCommand();
+            MySqlCommand update = new MySqlCommand("UPDATE t_artikel SET kategorie = '" + cmb_Kategorie.Text.ToLower().ToString() + "', " +
+                "marke = '" + txt_Marke.Text.ToString() + "', " +
+                "bezeichnung = '" + txt_Bezeichnung.Text.ToString() + "' " +
+                "WHERE artikelid = " + artikelID + ";", con);
 
             try
             {
+                con.Open();
+                update.ExecuteNonQuery();
+                con.Close();
 
+                MessageBox.Show("Änderungen erfolgreich übernommen");
             }
             catch(MySqlException ex)
             {
@@ -45,6 +55,8 @@ namespace Lagerverwaltung___Mode
 
         private void Artikel_Bearbeiten_Load(object sender, EventArgs e)
         {
+            //MessageBox.Show(artikelID.ToString());
+
             // Rollen zu Combobox hinzufügen
             MySqlCommand select = new MySqlCommand("SELECT kategorie FROM t_artikel;", con);
 

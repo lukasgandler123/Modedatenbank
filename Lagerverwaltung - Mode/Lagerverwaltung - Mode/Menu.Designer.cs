@@ -84,6 +84,8 @@
             this.lbl_l_artikel = new System.Windows.Forms.Label();
             this.tbc_eingang = new System.Windows.Forms.TabControl();
             this.tbp_Artikel = new System.Windows.Forms.TabPage();
+            this.btn_Filtern = new System.Windows.Forms.Button();
+            this.dgv_Artikel = new System.Windows.Forms.DataGridView();
             this.txt_art_kategorie = new System.Windows.Forms.TextBox();
             this.txt_art_marke = new System.Windows.Forms.TextBox();
             this.txt_art_bezeichnung = new System.Windows.Forms.TextBox();
@@ -118,7 +120,6 @@
             this.lbl_lief_lieferant = new System.Windows.Forms.Label();
             this.lbl_lief_lieferantennummer = new System.Windows.Forms.Label();
             this.tbc_Daten = new System.Windows.Forms.TabControl();
-            this.dgv_Artikel = new System.Windows.Forms.DataGridView();
             this.t_Artikel_DataSet = new Lagerverwaltung___Mode.t_Artikel_DataSet();
             this.tartikelBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.t_artikelTableAdapter = new Lagerverwaltung___Mode.t_Artikel_DataSetTableAdapters.t_artikelTableAdapter();
@@ -132,10 +133,10 @@
             this.gpx_eingang.SuspendLayout();
             this.tbc_eingang.SuspendLayout();
             this.tbp_Artikel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_Artikel)).BeginInit();
             this.tbp_Kunde.SuspendLayout();
             this.tbp_Lieferant.SuspendLayout();
             this.tbc_Daten.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_Artikel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.t_Artikel_DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tartikelBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tartikelBindingSource1)).BeginInit();
@@ -625,6 +626,7 @@
             // 
             // tbp_Artikel
             // 
+            this.tbp_Artikel.Controls.Add(this.btn_Filtern);
             this.tbp_Artikel.Controls.Add(this.dgv_Artikel);
             this.tbp_Artikel.Controls.Add(this.txt_art_kategorie);
             this.tbp_Artikel.Controls.Add(this.txt_art_marke);
@@ -641,6 +643,28 @@
             this.tbp_Artikel.TabIndex = 2;
             this.tbp_Artikel.Text = "Artikel";
             this.tbp_Artikel.UseVisualStyleBackColor = true;
+            // 
+            // btn_Filtern
+            // 
+            this.btn_Filtern.Location = new System.Drawing.Point(191, 388);
+            this.btn_Filtern.Name = "btn_Filtern";
+            this.btn_Filtern.Size = new System.Drawing.Size(165, 56);
+            this.btn_Filtern.TabIndex = 20;
+            this.btn_Filtern.Text = "Filtern";
+            this.btn_Filtern.UseVisualStyleBackColor = true;
+            this.btn_Filtern.Click += new System.EventHandler(this.btn_Filtern_Click);
+            // 
+            // dgv_Artikel
+            // 
+            this.dgv_Artikel.AllowUserToAddRows = false;
+            this.dgv_Artikel.AllowUserToDeleteRows = false;
+            this.dgv_Artikel.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_Artikel.Location = new System.Drawing.Point(16, 123);
+            this.dgv_Artikel.Name = "dgv_Artikel";
+            this.dgv_Artikel.ReadOnly = true;
+            this.dgv_Artikel.Size = new System.Drawing.Size(340, 259);
+            this.dgv_Artikel.TabIndex = 4;
+            this.dgv_Artikel.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Artikel_CellClick);
             // 
             // txt_art_kategorie
             // 
@@ -674,7 +698,7 @@
             // 
             this.btn_art_anlegen.Location = new System.Drawing.Point(16, 388);
             this.btn_art_anlegen.Name = "btn_art_anlegen";
-            this.btn_art_anlegen.Size = new System.Drawing.Size(340, 56);
+            this.btn_art_anlegen.Size = new System.Drawing.Size(169, 56);
             this.btn_art_anlegen.TabIndex = 16;
             this.btn_art_anlegen.Text = "Artikel anlegen";
             this.btn_art_anlegen.UseVisualStyleBackColor = true;
@@ -762,6 +786,7 @@
             this.button6.TabIndex = 24;
             this.button6.Text = "Kunde erfassen";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // txt_k_kunde
             // 
@@ -951,18 +976,6 @@
             this.tbc_Daten.Size = new System.Drawing.Size(376, 476);
             this.tbc_Daten.TabIndex = 3;
             // 
-            // dgv_Artikel
-            // 
-            this.dgv_Artikel.AllowUserToAddRows = false;
-            this.dgv_Artikel.AllowUserToDeleteRows = false;
-            this.dgv_Artikel.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_Artikel.Location = new System.Drawing.Point(16, 123);
-            this.dgv_Artikel.Name = "dgv_Artikel";
-            this.dgv_Artikel.ReadOnly = true;
-            this.dgv_Artikel.Size = new System.Drawing.Size(340, 259);
-            this.dgv_Artikel.TabIndex = 4;
-            this.dgv_Artikel.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Artikel_CellClick);
-            // 
             // t_Artikel_DataSet
             // 
             this.t_Artikel_DataSet.DataSetName = "t_Artikel_DataSet";
@@ -1008,12 +1021,12 @@
             this.tbc_eingang.ResumeLayout(false);
             this.tbp_Artikel.ResumeLayout(false);
             this.tbp_Artikel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_Artikel)).EndInit();
             this.tbp_Kunde.ResumeLayout(false);
             this.tbp_Kunde.PerformLayout();
             this.tbp_Lieferant.ResumeLayout(false);
             this.tbp_Lieferant.PerformLayout();
             this.tbc_Daten.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_Artikel)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.t_Artikel_DataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tartikelBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tartikelBindingSource1)).EndInit();
@@ -1117,5 +1130,6 @@
         private System.Windows.Forms.BindingSource tartikelBindingSource;
         private t_Artikel_DataSetTableAdapters.t_artikelTableAdapter t_artikelTableAdapter;
         private System.Windows.Forms.BindingSource tartikelBindingSource1;
+        private System.Windows.Forms.Button btn_Filtern;
     }
 }
